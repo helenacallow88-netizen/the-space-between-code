@@ -81,7 +81,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content:
           "Helping mission-led organizations move through change without leaving their people behind. People-centred change facilitation, listening spaces and coaching.",
       },
-      { property: "og:title", content: "The Space Between" },
+      { property: "og:title", content: "The Space Between — People-Centred Change Facilitation" },
       {
         property: "og:description",
         content:
@@ -89,6 +89,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "The Space Between — People-Centred Change Facilitation" },
+      { name: "description", content: "Helping mission-led organizations move through change without leaving their people behind. People-centred change facilitation, listening spaces and coaching." },
+      { property: "og:description", content: "Helping mission-led organizations move through change without leaving their people behind. People-centred change facilitation, listening spaces and coaching." },
+      { name: "twitter:description", content: "Helping mission-led organizations move through change without leaving their people behind. People-centred change facilitation, listening spaces and coaching." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9e2b2915-6e07-4968-ba3c-4d496f9df252/id-preview-f78cd0cc--9c1249b2-1d49-48b7-aa2c-8e99cf70a117.lovable.app-1783266273976.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9e2b2915-6e07-4968-ba3c-4d496f9df252/id-preview-f78cd0cc--9c1249b2-1d49-48b7-aa2c-8e99cf70a117.lovable.app-1783266273976.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
