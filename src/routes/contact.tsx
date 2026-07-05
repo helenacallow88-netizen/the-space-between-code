@@ -1,6 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 
+const encode = (data: Record<string, string>) =>
+  Object.keys(data)
+    .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+    .join("&");
+
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
@@ -22,7 +27,39 @@ export const Route = createFileRoute("/contact")({
 
 function Contact() {
   const [sent, setSent] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
   const [enquiryType, setEnquiryType] = useState<"organization" | "individual">("organization");
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setSubmitting(true);
+    setSubmitError("");
+
+    const form = event.currentTarget;
+    const formData = Object.fromEntries(
+      Array.from(new FormData(form).entries(), ([key, value]) => [key, String(value)]),
+    );
+
+    try {
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "contact", ...formData }),
+      });
+
+      if (!response.ok) {
+        throw new Error(`Form submission failed with status ${response.status}`);
+      }
+
+      form.reset();
+      setSent(true);
+    } catch {
+      setSubmitError("Your message could not be sent. Please try again in a moment.");
+    } finally {
+      setSubmitting(false);
+    }
+  };
 
   return (
     <>
@@ -31,13 +68,11 @@ function Contact() {
         <div className="container-prose pb-16 pt-16 md:pb-20 md:pt-24">
           <p className="eyebrow">Contact</p>
           <h1 className="mt-6 max-w-3xl text-4xl leading-[1.05] text-foreground md:text-6xl">
-            Begin with a{" "}
-            <span className="italic text-terracotta">conversation.</span>
+            Begin with a <span className="italic text-terracotta">conversation.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            You do not need to have everything figured out before getting in
-            touch. The first conversation is simply a place to understand the
-            landscape.
+            You do not need to have everything figured out before getting in touch. The first
+            conversation is simply a place to understand the landscape.
           </p>
         </div>
       </section>
@@ -51,18 +86,19 @@ function Contact() {
               Book a landscape conversation
             </h2>
             <p className="mt-3 text-muted-foreground">
-              A grounded first step to understand where your organization is
-              now and what may be needed.
+              A grounded first step to understand where your organization is now and what may be
+              needed.
             </p>
           </div>
           <div className="rounded-[1.5rem] border border-border bg-card p-8">
-            <p className="eyebrow" style={{ color: "var(--rose)" }}>For individuals</p>
+            <p className="eyebrow" style={{ color: "var(--rose)" }}>
+              For individuals
+            </p>
             <h2 className="mt-3 font-serif text-2xl text-foreground">
               Enquire about individual coaching
             </h2>
             <p className="mt-3 text-muted-foreground">
-              A quiet space to share where you are and what you're curious
-              about exploring.
+              A quiet space to share where you are and what you're curious about exploring.
             </p>
           </div>
         </div>
@@ -75,21 +111,27 @@ function Contact() {
             {sent ? (
               <div className="py-12 text-center">
                 <p className="eyebrow">Received</p>
-                <h2 className="mt-4 font-serif text-3xl text-foreground">
-                  Thank you.
-                </h2>
+                <h2 className="mt-4 font-serif text-3xl text-foreground">Thank you.</h2>
                 <p className="mt-4 text-muted-foreground">
                   Your message has landed. I'll be in touch soon.
                 </p>
               </div>
             ) : (
               <form
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
                 className="grid gap-6"
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  setSent(true);
-                }}
+                onSubmit={handleSubmit}
               >
+                <input type="hidden" name="form-name" value="contact" />
+                <p hidden>
+                  <label>
+                    Don’t fill this out:
+                    <input name="bot-field" />
+                  </label>
+                </p>
                 <div className="grid gap-6 md:grid-cols-2">
                   <Field label="Name" name="name" required />
                   <Field label="Email" name="email" type="email" required />
@@ -117,12 +159,10 @@ function Contact() {
                       </button>
                     ))}
                   </div>
+                  <input type="hidden" name="enquiryType" value={enquiryType} />
                 </fieldset>
 
-                <Field
-                  label="What kind of support are you looking for?"
-                  name="support"
-                />
+                <Field label="What kind of support are you looking for?" name="support" />
 
                 <div className="grid gap-2">
                   <label htmlFor="message" className="text-sm text-foreground">
@@ -140,10 +180,16 @@ function Contact() {
 
                 <button
                   type="submit"
-                  className="mt-2 inline-flex w-fit items-center rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground transition-opacity hover:opacity-90"
+                  disabled={submitting}
+                  className="mt-2 inline-flex w-fit items-center rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-60"
                 >
-                  Send message
+                  {submitting ? "Sending…" : "Send message"}
                 </button>
+                {submitError ? (
+                  <p role="alert" className="text-sm text-destructive">
+                    {submitError}
+                  </p>
+                ) : null}
               </form>
             )}
           </div>
