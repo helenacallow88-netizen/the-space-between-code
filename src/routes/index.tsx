@@ -10,7 +10,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Helping mission-led organizations move through change without leaving their people behind. People-centred change facilitation, listening spaces and coaching.",
+          "Helping mission-led organisations move through change without leaving their people behind. People-centred change facilitation, listening spaces and coaching.",
       },
       { property: "og:title", content: "The Space Between" },
       {
@@ -32,11 +32,11 @@ function Home() {
           <div className="md:col-span-7 md:pr-6">
             <p className="eyebrow">The Space Between</p>
             <h1 className="mt-6 text-balance text-4xl leading-[1.05] text-foreground md:text-6xl">
-              Helping organizations move through change{" "}
+              Helping organisations move through change{" "}
               <span className="italic text-terracotta">without leaving their people behind.</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-              People-centred change facilitation for mission-led organizations
+              People-centred change facilitation for mission-led organisations
               navigating restructuring, redundancy, cultural shifts and
               transition.
             </p>
@@ -83,7 +83,7 @@ function Home() {
               The Space Between is the place between what was and what comes next.
             </p>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              It is where people and organizations can feel uncertain,
+              It is where people and organisations can feel uncertain,
               disconnected, or unsure how to move forward. It is also where
               reconnection becomes possible — to values, trust, motivation,
               voice, and direction.
@@ -116,11 +116,11 @@ function Home() {
           <div className="grid gap-6 md:grid-cols-2">
             <PathwayCard
               image={orgImg}
-              eyebrow="For organizations"
+              eyebrow="For organisations"
               title="Move through change without losing the people at the centre of it."
-              body="For organizations navigating restructuring, redundancy, department changes, cultural tension, communication breakdown, or uncertainty."
-              cta="Organizational support"
-              to="/organizations"
+              body="For organisations navigating restructuring, redundancy, department changes, cultural tension, communication breakdown, or uncertainty."
+              cta="Organisational support"
+              to="/organisations"
               tone="clay"
             />
             <PathwayCard
@@ -183,7 +183,7 @@ function Home() {
           </div>
           <div className="md:col-span-7">
             <p className="text-lg leading-relaxed text-muted-foreground">
-              In a previous organization, I acted as an employee representative
+              In a previous organisation, I acted as an employee representative
               during a major redundancy process, supporting people at risk,
               gathering concerns from employees, and meeting weekly with senior
               leadership to help bridge the gap between what people were
@@ -205,11 +205,11 @@ function Home() {
         <div className="container-prose max-w-3xl">
           <p className="eyebrow" style={{ color: "var(--rose)" }}>Begin</p>
           <h2 className="mt-4 font-serif text-4xl leading-tight text-cream md:text-5xl">
-            Navigating change in your organization?
+            Navigating change in your organisation?
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-cream/75">
             Start with a landscape conversation — a grounded first step to
-            understand where your organization is now, what people are
+            understand where your organisation is now, what people are
             experiencing, and what kind of support may be needed.
           </p>
           <div className="mt-10">
@@ -240,7 +240,7 @@ function PathwayCard({
   title: string;
   body: string;
   cta: string;
-  to: "/organizations" | "/individuals";
+  to: "/organisations" | "/individuals";
   tone: "clay" | "rose";
 }) {
   return (

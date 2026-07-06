@@ -29,7 +29,7 @@ function Contact() {
   const [sent, setSent] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState("");
-  const [enquiryType, setEnquiryType] = useState<"organization" | "individual">("organization");
+  const [enquiryType, setEnquiryType] = useState<"organisation" | "individual">("organisation");
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -81,12 +81,12 @@ function Contact() {
       <section className="py-16">
         <div className="container-prose grid gap-6 md:grid-cols-2">
           <div className="rounded-[1.5rem] border border-border bg-card p-8">
-            <p className="eyebrow">For organizations</p>
+            <p className="eyebrow">For organisations</p>
             <h2 className="mt-3 font-serif text-2xl text-foreground">
               Book a landscape conversation
             </h2>
             <p className="mt-3 text-muted-foreground">
-              A grounded first step to understand where your organization is now and what may be
+              A grounded first step to understand where your organisation is now and what may be
               needed.
             </p>
           </div>
@@ -136,14 +136,14 @@ function Contact() {
                   <Field label="Name" name="name" required />
                   <Field label="Email" name="email" type="email" required />
                 </div>
-                <Field label="Organization (optional)" name="organization" />
+                <Field label="Organisation (optional)" name="organization" />
 
                 <fieldset className="grid gap-3">
                   <legend className="text-sm text-foreground">
-                    Are you enquiring as an organization or an individual?
+                    Are you enquiring as an organisation or an individual?
                   </legend>
                   <div className="flex flex-wrap gap-2">
-                    {(["organization", "individual"] as const).map((t) => (
+                    {(["organisation", "individual"] as const).map((t) => (
                       <button
                         key={t}
                         type="button"

@@ -8,7 +8,7 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "Over a decade coaching, leading and supporting organizations through change. The founder of The Space Between on the work, the roots and the way she moves through it.",
+          "Over a decade coaching, leading and supporting organisations through change. The founder of The Space Between on the work, the roots and the way she moves through it.",
       },
       { property: "og:title", content: "About — The Space Between" },
       {
@@ -23,7 +23,7 @@ export const Route = createFileRoute("/about")({
 const credentials = [
   "Over 10 years in people development",
   "Coaching, managing and leading teams",
-  "Supporting teams through organizational change",
+  "Supporting teams through organisational change",
   "Experience with redundancy processes",
   "Employee representative during a major redundancy",
   "Trusted by senior leaders and frontline employees alike",
@@ -67,7 +67,7 @@ function About() {
           <div className="md:col-span-7 space-y-6 text-lg leading-relaxed text-muted-foreground">
             <p className="font-serif text-2xl leading-snug text-foreground md:text-3xl">
               I have spent more than 10 years working with people — coaching,
-              managing, leading teams and supporting organizations through
+              managing, leading teams and supporting organisations through
               change.
             </p>
             <p>
@@ -78,13 +78,13 @@ function About() {
             </p>
             <p>
               I listen closely, notice what is beneath the surface, and help
-              people and organizations move forward in a way that feels honest,
+              people and organisations move forward in a way that feels honest,
               grounded and possible.
             </p>
             <p>
               As someone who is mixed race and has often lived between
               different worlds, I understand the complexity of belonging. This
-              shapes the way I work with individuals, teams and organizations —
+              shapes the way I work with individuals, teams and organisations —
               especially in moments where identity, values, trust and change
               are all in the room.
             </p>
@@ -117,7 +117,7 @@ function About() {
           <div className="md:col-span-8 space-y-6 text-lg leading-relaxed text-muted-foreground">
             <p>
               I work in an emergent way. I am curious about people, places,
-              organizations and systems. I bring creativity, playfulness and
+              organisations and systems. I bring creativity, playfulness and
               body-based awareness into the work where it helps.
             </p>
             <p>
