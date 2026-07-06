@@ -79,7 +79,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Helping mission-led organizations move through change without leaving their people behind. People-centred change facilitation, listening spaces and coaching.",
+          "Helping mission-led organisations move through change without leaving their people behind. People-centred change facilitation, listening spaces and coaching.",
       },
       { property: "og:title", content: "The Space Between — People-Centred Change Facilitation" },
       {
@@ -90,9 +90,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "The Space Between — People-Centred Change Facilitation" },
-      { name: "description", content: "Helping mission-led organizations move through change without leaving their people behind. People-centred change facilitation, listening spaces and coaching." },
-      { property: "og:description", content: "Helping mission-led organizations move through change without leaving their people behind. People-centred change facilitation, listening spaces and coaching." },
-      { name: "twitter:description", content: "Helping mission-led organizations move through change without leaving their people behind. People-centred change facilitation, listening spaces and coaching." },
+      { name: "description", content: "Helping mission-led organisations move through change without leaving their people behind. People-centred change facilitation, listening spaces and coaching." },
+      { property: "og:description", content: "Helping mission-led organisations move through change without leaving their people behind. People-centred change facilitation, listening spaces and coaching." },
+      { name: "twitter:description", content: "Helping mission-led organisations move through change without leaving their people behind. People-centred change facilitation, listening spaces and coaching." },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9e2b2915-6e07-4968-ba3c-4d496f9df252/id-preview-f78cd0cc--9c1249b2-1d49-48b7-aa2c-8e99cf70a117.lovable.app-1783266273976.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9e2b2915-6e07-4968-ba3c-4d496f9df252/id-preview-f78cd0cc--9c1249b2-1d49-48b7-aa2c-8e99cf70a117.lovable.app-1783266273976.png" },
     ],
@@ -131,7 +131,7 @@ function SiteHeader() {
   const [open, setOpen] = useState(false);
   const links = [
     { to: "/", label: "Home" },
-    { to: "/organizations", label: "For Organizations" },
+    { to: "/organisations", label: "For Organisations" },
     { to: "/individuals", label: "For Individuals" },
     { to: "/about", label: "About" },
     { to: "/contact", label: "Contact" },
@@ -211,14 +211,14 @@ function SiteFooter() {
         <div>
           <p className="font-serif text-xl text-foreground">The Space Between</p>
           <p className="mt-3 max-w-xs text-sm text-muted-foreground">
-            People-centred change facilitation for mission-led organizations.
+            People-centred change facilitation for mission-led organisations.
             Coaching for people navigating identity, belonging and transition.
           </p>
         </div>
         <div>
           <p className="eyebrow">Explore</p>
           <ul className="mt-4 space-y-2 text-sm">
-            <li><Link to="/organizations" className="text-foreground hover:text-terracotta">For Organizations</Link></li>
+            <li><Link to="/organisations" className="text-foreground hover:text-terracotta">For Organisations</Link></li>
             <li><Link to="/individuals" className="text-foreground hover:text-terracotta">For Individuals</Link></li>
             <li><Link to="/about" className="text-foreground hover:text-terracotta">About</Link></li>
             <li><Link to="/contact" className="text-foreground hover:text-terracotta">Contact</Link></li>
