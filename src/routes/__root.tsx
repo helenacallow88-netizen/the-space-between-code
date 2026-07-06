@@ -227,14 +227,14 @@ function SiteFooter() {
         <div>
           <p className="eyebrow">Begin</p>
           <p className="mt-4 text-sm text-muted-foreground">
-            Every engagement starts with a landscape conversation — a grounded
+            Every engagement starts with a discovery call — a grounded
             first step to understand where you are and what may be needed.
           </p>
           <Link
             to="/contact"
             className="mt-4 inline-flex rounded-full border border-foreground/30 px-4 py-2 text-xs text-foreground transition-colors hover:bg-foreground hover:text-background"
           >
-            Book a landscape conversation
+            Book a discovery call
           </Link>
         </div>
       </div>

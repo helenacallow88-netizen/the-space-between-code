@@ -68,7 +68,7 @@ const services = [
 ];
 
 const steps = [
-  "Understand the landscape",
+  "Understand the context",
   "Listen to the people",
   "Translate between leadership and employees",
   "Support clearer communication",
@@ -96,7 +96,7 @@ function Organisations() {
                 to="/contact"
                 className="inline-flex items-center rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground transition-opacity hover:opacity-90"
               >
-                Book a landscape conversation
+                Book a discovery call
               </Link>
             </div>
           </div>
@@ -123,7 +123,7 @@ function Organisations() {
             keeps people, values and trust at the centre.
           </p>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            Through landscape conversations, listening spaces, facilitation and
+            Through discovery calls, listening spaces, facilitation and
             one-to-one support, I bridge the gap between leadership intention
             and employee experience.
           </p>
@@ -193,7 +193,7 @@ function Organisations() {
           </ol>
           <p className="mt-12 max-w-3xl text-muted-foreground">
             All organisational work is bespoke. Packages are designed following
-            an initial landscape conversation, based on the size, context and
+            an initial discovery call, based on the size, context and
             needs of the organisation.
           </p>
         </div>
@@ -240,19 +240,19 @@ function Organisations() {
       <section className="surface-ink py-24 md:py-32">
         <div className="container-prose max-w-3xl">
           <h2 className="font-serif text-4xl leading-tight text-cream md:text-5xl">
-            Start with the landscape.
+            Start with a discovery call.
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-cream/75">
             If your organisation is moving through change and you want to
-            understand the people impact more clearly, book a landscape
-            conversation.
+            understand the people impact more clearly, book a discovery
+            call.
           </p>
           <div className="mt-10">
             <Link
               to="/contact"
               className="inline-flex items-center rounded-full bg-cream px-6 py-3 text-sm text-ink transition-opacity hover:opacity-90"
             >
-              Book a landscape conversation
+              Book a discovery call
             </Link>
           </div>
         </div>
