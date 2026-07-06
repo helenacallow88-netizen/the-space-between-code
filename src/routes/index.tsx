@@ -45,7 +45,7 @@ function Home() {
                 to="/contact"
                 className="inline-flex items-center rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground transition-opacity hover:opacity-90"
               >
-                Book a landscape conversation
+                Book a discovery call
               </Link>
               <Link
                 to="/individuals"
@@ -208,16 +208,16 @@ function Home() {
             Navigating change in your organisation?
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-cream/75">
-            Start with a landscape conversation — a grounded first step to
-            understand where your organisation is now, what people are
-            experiencing, and what kind of support may be needed.
+            Start with a discovery call — your first experience of being in the work
+            together. A grounded space to understand where your organisation is now,
+            what people are experiencing, and what kind of support may be needed.
           </p>
           <div className="mt-10">
             <Link
               to="/contact"
               className="inline-flex items-center rounded-full bg-cream px-6 py-3 text-sm text-ink transition-opacity hover:opacity-90"
             >
-              Book a landscape conversation
+              Book a discovery call
             </Link>
           </div>
         </div>
