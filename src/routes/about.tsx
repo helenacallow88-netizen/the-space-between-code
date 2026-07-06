@@ -77,16 +77,29 @@ function About() {
               seen, heard and understood.
             </p>
             <p>
-              I listen closely, notice what is beneath the surface, and help
-              people and organisations move forward in a way that feels honest,
-              grounded and possible.
+              Over time, I realised I was not only teaching leadership or
+              supporting change. I was helping people come home to themselves —
+              to the parts they had adapted or quietened in order to belong.
             </p>
             <p>
               As someone who is mixed race and has often lived between
-              different worlds, I understand the complexity of belonging. This
-              shapes the way I work with individuals, teams and organisations —
-              especially in moments where identity, values, trust and change
-              are all in the room.
+              different worlds, I understand the complexity of belonging. I know
+              what it can feel like to sit between cultures, identities,
+              expectations and versions of yourself, wondering where you truly
+              fit.
+            </p>
+            <p>
+              What I have learned is that belonging does not always come from
+              choosing one side or becoming easier for others to understand. It
+              can come from honouring the whole of who you are — the strength
+              and the softness, the clarity and the uncertainty, the joy and the
+              weight.
+            </p>
+            <p>
+              The Space Between was created from that place. It is a home for
+              the conversations, coaching, movement, reflection and human
+              connection that help people feel less fragmented and more fully
+              themselves.
             </p>
           </div>
           <aside className="md:col-span-5">
@@ -121,9 +134,20 @@ function About() {
               body-based awareness into the work where it helps.
             </p>
             <p>
+              I do not believe transformation only happens through talking. It
+              can happen through movement, laughter, quiet, creativity, honest
+              reflection and the moment someone feels able to say what is true.
+            </p>
+            <p>
               I can speak with senior leaders, professionals, junior employees
               and people from all walks of life. Trust tends to form quickly —
               because I meet people as they are, not as I think they should be.
+            </p>
+            <p>
+              This is the heart of The Space Between: a space where you do not
+              have to perform, shrink yourself or choose between different parts
+              of who you are. A space to explore, reconnect, move, reflect and
+              belong — exactly as you are.
             </p>
           </div>
         </div>
