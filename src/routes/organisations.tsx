@@ -1,16 +1,16 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import orgImg from "@/assets/organizations-visual.jpg";
 
-export const Route = createFileRoute("/organizations")({
+export const Route = createFileRoute("/organisations")({
   head: () => ({
     meta: [
-      { title: "People-Centred Change Facilitation for Organizations — The Space Between" },
+      { title: "People-Centred Change Facilitation for Organisations — The Space Between" },
       {
         name: "description",
         content:
-          "Support for mission-led organizations navigating restructuring, redundancy, cultural shifts and transition. Landscape conversations, listening spaces, facilitation and communication support.",
+          "Support for mission-led organisations navigating restructuring, redundancy, cultural shifts and transition. Landscape conversations, listening spaces, facilitation and communication support.",
       },
-      { property: "og:title", content: "For Organizations — The Space Between" },
+      { property: "og:title", content: "For Organisations — The Space Between" },
       {
         property: "og:description",
         content:
@@ -18,7 +18,7 @@ export const Route = createFileRoute("/organizations")({
       },
     ],
   }),
-  component: Organizations,
+  component: Organisations,
 });
 
 const situations = [
@@ -31,14 +31,14 @@ const situations = [
   "Values and culture feeling misaligned",
   "Communication breakdown",
   "Teams needing a safe space to process change",
-  "Public sector or mission-led organizations managing complex people dynamics",
+  "Public sector or mission-led organisations managing complex people dynamics",
 ];
 
 const services = [
   {
     n: "01",
     title: "Landscape conversation",
-    body: "Every engagement begins here. A space to understand where the organization is now, what has led to this moment, what people are experiencing on the ground, what leadership is hoping for, and what kind of culture the organization wants to protect, repair or rebuild through the change.",
+    body: "Every engagement begins here. A space to understand where the organisation is now, what has led to this moment, what people are experiencing on the ground, what leadership is hoping for, and what kind of culture the organisation wants to protect, repair or rebuild through the change.",
   },
   {
     n: "02",
@@ -76,19 +76,19 @@ const steps = [
   "Offer follow-up support where needed",
 ];
 
-function Organizations() {
+function Organisations() {
   return (
     <>
       {/* HERO */}
       <section className="surface-warm">
         <div className="container-prose grid gap-10 pb-20 pt-16 md:grid-cols-12 md:pb-28 md:pt-24">
           <div className="md:col-span-7">
-            <p className="eyebrow">For organizations</p>
+            <p className="eyebrow">For organisations</p>
             <h1 className="mt-6 text-4xl leading-[1.05] text-foreground md:text-6xl">
               People-Centred Change Facilitation
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-              For organizations navigating the space between what was and what
+              For organisations navigating the space between what was and what
               comes next.
             </p>
             <div className="mt-10">
@@ -119,7 +119,7 @@ function Organizations() {
       <section className="py-24 md:py-32">
         <div className="container-prose max-w-3xl">
           <p className="font-serif text-2xl leading-snug text-foreground md:text-3xl">
-            I help mission-led organizations move through change in a way that
+            I help mission-led organisations move through change in a way that
             keeps people, values and trust at the centre.
           </p>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
@@ -155,7 +155,7 @@ function Organizations() {
           <div className="mb-14 max-w-2xl">
             <p className="eyebrow">Support</p>
             <h2 className="mt-4 text-3xl text-foreground md:text-4xl">
-              How I support organizations
+              How I support organisations
             </h2>
           </div>
           <div className="grid gap-px overflow-hidden rounded-[1.5rem] border border-border bg-border md:grid-cols-2">
@@ -178,7 +178,7 @@ function Organizations() {
           <div className="mb-14 max-w-2xl">
             <p className="eyebrow">Process</p>
             <h2 className="mt-4 text-3xl text-foreground md:text-4xl">
-              A bespoke process shaped around your organization
+              A bespoke process shaped around your organisation
             </h2>
           </div>
           <ol className="grid gap-6 md:grid-cols-3">
@@ -192,9 +192,9 @@ function Organizations() {
             ))}
           </ol>
           <p className="mt-12 max-w-3xl text-muted-foreground">
-            All organizational work is bespoke. Packages are designed following
+            All organisational work is bespoke. Packages are designed following
             an initial landscape conversation, based on the size, context and
-            needs of the organization.
+            needs of the organisation.
           </p>
         </div>
       </section>
@@ -210,7 +210,7 @@ function Organizations() {
           </div>
           <div className="md:col-span-8 space-y-6 text-lg leading-relaxed text-muted-foreground">
             <p>
-              In a previous organization, I acted as an employee representative
+              In a previous organisation, I acted as an employee representative
               during a major redundancy process.
             </p>
             <p>
@@ -243,7 +243,7 @@ function Organizations() {
             Start with the landscape.
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-cream/75">
-            If your organization is moving through change and you want to
+            If your organisation is moving through change and you want to
             understand the people impact more clearly, book a landscape
             conversation.
           </p>
