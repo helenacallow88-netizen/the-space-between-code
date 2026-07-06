@@ -9,11 +9,11 @@ const encode = (data: Record<string, string>) =>
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Book a Landscape Conversation — The Space Between" },
+      { title: "Contact — Book a Discovery Call — The Space Between" },
       {
         name: "description",
         content:
-          "Book a landscape conversation or enquire about individual coaching. The first conversation is simply a place to understand the landscape.",
+          "Book a discovery call or enquire about individual coaching. The first conversation is simply a place to understand the discovery call.",
       },
       { property: "og:title", content: "Contact — The Space Between" },
       {
@@ -72,7 +72,7 @@ function Contact() {
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
             You do not need to have everything figured out before getting in touch. The first
-            conversation is simply a place to understand the landscape.
+            conversation is simply a place to understand the discovery call.
           </p>
         </div>
       </section>
@@ -83,7 +83,7 @@ function Contact() {
           <div className="rounded-[1.5rem] border border-border bg-card p-8">
             <p className="eyebrow">For organisations</p>
             <h2 className="mt-3 font-serif text-2xl text-foreground">
-              Book a landscape conversation
+              Book a discovery call
             </h2>
             <p className="mt-3 text-muted-foreground">
               A grounded first step to understand where your organisation is now and what may be
