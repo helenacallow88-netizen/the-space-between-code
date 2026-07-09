@@ -14,7 +14,7 @@ export const Route = createFileRoute("/experiences")({
       {
         property: "og:description",
         content:
-          "Gatherings, workshops and rituals for people who want to slow down and think together.",
+          "Gatherings, workshops and spaces for reflection for people who want to slow down and think together.",
       },
     ],
   }),
@@ -29,7 +29,7 @@ const offerings = [
   { title: "Circle Facilitation", body: "Held, structured spaces for groups to speak and listen with more care than everyday conversation allows." },
   { title: "Movement Experiences", body: "Body-based sessions that let people process, reflect and reconnect through movement rather than words alone." },
   { title: "Listening Spaces", body: "Facilitated conversations where people can share what they're actually carrying — and be met, not fixed." },
-  { title: "Future Festivals", body: "Larger, seasonal gatherings in development — bringing together the many strands of The Space Between community." },
+  { title: "Seasonal Gatherings", body: "Larger community gatherings in development — bringing together the many strands of The Space Between community." },
 ];
 
 function Experiences() {
@@ -42,7 +42,7 @@ function Experiences() {
             <p className="eyebrow">Experiences</p>
             <h1 className="mt-6 text-4xl leading-[1.05] text-foreground md:text-6xl">
               Gatherings, workshops and{" "}
-              <span className="italic text-terracotta">rituals of reflection.</span>
+              <span className="italic text-terracotta">spaces for reflection.</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
               Curated spaces to slow down, think together and reconnect —
