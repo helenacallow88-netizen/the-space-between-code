@@ -4,17 +4,17 @@ import indImg from "@/assets/individuals-visual.jpg";
 export const Route = createFileRoute("/individuals")({
   head: () => ({
     meta: [
-      { title: "Coaching for People Between Worlds — The Space Between" },
+      { title: "For Individuals — Navigating Life's Transitions — The Space Between" },
       {
         name: "description",
         content:
-          "Coaching and reflective support for people navigating identity, belonging, mixed heritage, neurodivergence, career change and the feeling of being between worlds.",
+          "Reflective coaching and one-to-one support for people navigating career transitions, identity, belonging, relationships, purpose and change.",
       },
       { property: "og:title", content: "For Individuals — The Space Between" },
       {
         property: "og:description",
         content:
-          "For people finding their way home to themselves.",
+          "Helping people navigate the moments that shape us.",
       },
     ],
   }),
@@ -22,17 +22,13 @@ export const Route = createFileRoute("/individuals")({
 });
 
 const themes = [
+  "Career transitions",
   "Identity",
   "Belonging",
-  "Mixed heritage",
-  "Neurodivergence",
-  "Career and life transition",
+  "Relationships",
+  "Purpose",
   "Confidence",
-  "Self-trust",
-  "Feeling between worlds",
-  "Coming home to yourself",
-  "Body-based and somatic reflection",
-  "Playfulness, creativity and curiosity",
+  "Change",
 ];
 
 function Individuals() {
@@ -40,23 +36,23 @@ function Individuals() {
     <>
       {/* HERO */}
       <section className="relative overflow-hidden" style={{ background: "color-mix(in oklab, var(--rose) 22%, var(--cream))" }}>
-        <div className="container-prose grid gap-10 pb-20 pt-16 md:grid-cols-12 md:pb-28 md:pt-24">
+        <div className="container-prose grid gap-10 pb-24 pt-20 md:grid-cols-12 md:pb-32 md:pt-28">
           <div className="md:col-span-7">
             <p className="eyebrow" style={{ color: "var(--terracotta)" }}>For individuals</p>
             <h1 className="mt-6 text-4xl leading-[1.05] text-foreground md:text-6xl">
-              For people finding their way{" "}
-              <span className="italic">home to themselves.</span>
+              Helping people navigate the{" "}
+              <span className="italic">moments that shape us.</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-              Coaching and reflective support for people navigating identity,
-              belonging, transition and the feeling of being between worlds.
+              For anyone standing at a threshold — questioning what's next,
+              who they are becoming, or what they need to move forward.
             </p>
             <div className="mt-10">
               <Link
                 to="/contact"
                 className="inline-flex items-center rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground transition-opacity hover:opacity-90"
               >
-                Enquire about coaching
+                Begin a conversation
               </Link>
             </div>
           </div>
@@ -76,23 +72,22 @@ function Individuals() {
       </section>
 
       {/* OPENING */}
-      <section className="py-24 md:py-32">
+      <section className="py-28 md:py-32">
         <div className="container-prose max-w-3xl space-y-6">
           <p className="font-serif text-2xl leading-snug text-foreground md:text-3xl">
-            This work is for people who feel they are living between different
-            identities, cultures, roles, expectations or versions of themselves.
+            Together we'll explore what's happening beneath the surface — so you
+            can move forward feeling more connected to yourself.
           </p>
           <p className="text-lg leading-relaxed text-muted-foreground">
-            It may speak to people who are mixed race, neurodivergent,
-            navigating career change, moving between corporate and spiritual
-            worlds, questioning where they belong, or trying to reconnect with
-            their own voice.
+            This isn't a formula or a fix. It's a considered, reflective space
+            for the questions that matter — the ones that shape how you live,
+            lead, love and choose what comes next.
           </p>
         </div>
       </section>
 
       {/* THEMES */}
-      <section className="py-16 md:py-20" style={{ background: "color-mix(in oklab, var(--sage) 14%, var(--cream))" }}>
+      <section className="py-20 md:py-24" style={{ background: "color-mix(in oklab, var(--sage) 14%, var(--cream))" }}>
         <div className="container-prose">
           <p className="eyebrow">What we might explore</p>
           <ul className="mt-8 flex flex-wrap gap-3">
@@ -109,25 +104,28 @@ function Individuals() {
       </section>
 
       {/* APPROACH */}
-      <section className="py-24 md:py-32">
+      <section className="py-28 md:py-32">
         <div className="container-prose grid gap-12 md:grid-cols-12">
           <div className="md:col-span-4">
             <p className="eyebrow">Approach</p>
             <h2 className="mt-4 text-3xl text-foreground md:text-4xl">
-              Emergent, honest, human.
+              Emergent, honest, deeply human.
             </h2>
           </div>
           <div className="md:col-span-8 space-y-6 text-lg leading-relaxed text-muted-foreground">
             <p>
-              My coaching style is emergent, honest and human. I do not arrive
-              with a rigid formula or tell you who to become. I listen deeply,
-              reflect what I notice, help you understand what is alive in you,
-              and support you to find your own next step.
+              I don't arrive with a rigid method or tell you who to become. I
+              listen closely, reflect what I notice, and help you make sense of
+              what's alive in you right now.
             </p>
             <p>
               The work can include conversation, reflection, creative
-              exercises, body-based awareness, and playful exploration —
-              whatever helps you meet yourself more clearly.
+              exercises, body-based awareness and playful exploration — whatever
+              helps you meet yourself more clearly.
+            </p>
+            <p className="font-serif text-xl leading-snug text-foreground md:text-2xl">
+              You don't need a clear question to begin. Just a sense that
+              something wants to shift.
             </p>
           </div>
         </div>
@@ -140,15 +138,15 @@ function Individuals() {
             Curious?
           </h2>
           <p className="mt-6 text-lg text-muted-foreground">
-            You don't need a clear question to begin. Just a sense that
-            something wants to shift.
+            The first conversation is a place to simply be met — with warmth,
+            attention and no expectation of where it might lead.
           </p>
           <div className="mt-8">
             <Link
               to="/contact"
               className="inline-flex items-center rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground transition-opacity hover:opacity-90"
             >
-              Enquire about coaching
+              Begin a conversation
             </Link>
           </div>
         </div>
