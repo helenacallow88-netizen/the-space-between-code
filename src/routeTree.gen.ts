@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as OrganisationsRouteImport } from './routes/organisations'
 import { Route as IndividualsRouteImport } from './routes/individuals'
+import { Route as ExperiencesRouteImport } from './routes/experiences'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
@@ -29,6 +30,11 @@ const OrganisationsRoute = OrganisationsRouteImport.update({
 const IndividualsRoute = IndividualsRouteImport.update({
   id: '/individuals',
   path: '/individuals',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ExperiencesRoute = ExperiencesRouteImport.update({
+  id: '/experiences',
+  path: '/experiences',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -51,6 +57,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
+  '/experiences': typeof ExperiencesRoute
   '/individuals': typeof IndividualsRoute
   '/organisations': typeof OrganisationsRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -59,6 +66,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
+  '/experiences': typeof ExperiencesRoute
   '/individuals': typeof IndividualsRoute
   '/organisations': typeof OrganisationsRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -68,6 +76,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
+  '/experiences': typeof ExperiencesRoute
   '/individuals': typeof IndividualsRoute
   '/organisations': typeof OrganisationsRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -78,6 +87,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/contact'
+    | '/experiences'
     | '/individuals'
     | '/organisations'
     | '/sitemap.xml'
@@ -86,6 +96,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/contact'
+    | '/experiences'
     | '/individuals'
     | '/organisations'
     | '/sitemap.xml'
@@ -94,6 +105,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/contact'
+    | '/experiences'
     | '/individuals'
     | '/organisations'
     | '/sitemap.xml'
@@ -103,6 +115,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   ContactRoute: typeof ContactRoute
+  ExperiencesRoute: typeof ExperiencesRoute
   IndividualsRoute: typeof IndividualsRoute
   OrganisationsRoute: typeof OrganisationsRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
@@ -129,6 +142,13 @@ declare module '@tanstack/react-router' {
       path: '/individuals'
       fullPath: '/individuals'
       preLoaderRoute: typeof IndividualsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/experiences': {
+      id: '/experiences'
+      path: '/experiences'
+      fullPath: '/experiences'
+      preLoaderRoute: typeof ExperiencesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -159,6 +179,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   ContactRoute: ContactRoute,
+  ExperiencesRoute: ExperiencesRoute,
   IndividualsRoute: IndividualsRoute,
   OrganisationsRoute: OrganisationsRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
@@ -166,13 +187,3 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
