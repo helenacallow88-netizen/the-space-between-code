@@ -219,8 +219,9 @@ function SiteFooter() {
         <div>
           <p className="eyebrow">Explore</p>
           <ul className="mt-4 space-y-2 text-sm">
-            <li><Link to="/organisations" className="text-foreground hover:text-terracotta">For Organisations</Link></li>
-            <li><Link to="/individuals" className="text-foreground hover:text-terracotta">For Individuals</Link></li>
+            <li><Link to="/organisations" className="text-foreground hover:text-terracotta">Organisations</Link></li>
+            <li><Link to="/individuals" className="text-foreground hover:text-terracotta">Individuals</Link></li>
+            <li><Link to="/experiences" className="text-foreground hover:text-terracotta">Experiences</Link></li>
             <li><Link to="/about" className="text-foreground hover:text-terracotta">About</Link></li>
             <li><Link to="/contact" className="text-foreground hover:text-terracotta">Contact</Link></li>
           </ul>
