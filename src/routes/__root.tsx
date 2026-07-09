@@ -131,8 +131,9 @@ function SiteHeader() {
   const [open, setOpen] = useState(false);
   const links = [
     { to: "/", label: "Home" },
-    { to: "/organisations", label: "For Organisations" },
-    { to: "/individuals", label: "For Individuals" },
+    { to: "/organisations", label: "Organisations" },
+    { to: "/individuals", label: "Individuals" },
+    { to: "/experiences", label: "Experiences" },
     { to: "/about", label: "About" },
     { to: "/contact", label: "Contact" },
   ] as const;
