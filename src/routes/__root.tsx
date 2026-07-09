@@ -131,8 +131,9 @@ function SiteHeader() {
   const [open, setOpen] = useState(false);
   const links = [
     { to: "/", label: "Home" },
-    { to: "/organisations", label: "For Organisations" },
-    { to: "/individuals", label: "For Individuals" },
+    { to: "/organisations", label: "Organisations" },
+    { to: "/individuals", label: "Individuals" },
+    { to: "/experiences", label: "Experiences" },
     { to: "/about", label: "About" },
     { to: "/contact", label: "Contact" },
   ] as const;
@@ -218,8 +219,9 @@ function SiteFooter() {
         <div>
           <p className="eyebrow">Explore</p>
           <ul className="mt-4 space-y-2 text-sm">
-            <li><Link to="/organisations" className="text-foreground hover:text-terracotta">For Organisations</Link></li>
-            <li><Link to="/individuals" className="text-foreground hover:text-terracotta">For Individuals</Link></li>
+            <li><Link to="/organisations" className="text-foreground hover:text-terracotta">Organisations</Link></li>
+            <li><Link to="/individuals" className="text-foreground hover:text-terracotta">Individuals</Link></li>
+            <li><Link to="/experiences" className="text-foreground hover:text-terracotta">Experiences</Link></li>
             <li><Link to="/about" className="text-foreground hover:text-terracotta">About</Link></li>
             <li><Link to="/contact" className="text-foreground hover:text-terracotta">Contact</Link></li>
           </ul>
