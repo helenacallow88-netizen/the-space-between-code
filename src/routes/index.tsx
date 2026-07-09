@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImg from "@/assets/hero-threshold.jpg";
 import orgImg from "@/assets/organizations-visual.jpg";
 import indImg from "@/assets/individuals-visual.jpg";
+import expImg from "@/assets/experiences-visual.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -33,21 +34,34 @@ const betweens = [
   "Between possibility and action.",
 ];
 
-const experiences = [
-  "Executive Coaching",
-  "Leadership Development",
-  "Organisational Change",
-  "People Strategy for Start-ups",
-  "Facilitation",
-  "Speaking",
-  "Workshops",
-  "Retreats",
-  "Community Experiences",
-  "Listening Spaces",
-  "Discovery Conversations",
-  "Event Hosting & MC",
-  "Panel Moderation",
-  "Circle Facilitation",
+const ways = [
+  {
+    image: orgImg,
+    eyebrow: "Leaders & Organisations",
+    title: "People-centred change, leadership and thought partnership.",
+    body: "Executive thought partnership, leadership development, facilitation, people strategy for start-ups and people-centred organisational change.",
+    cta: "Explore leaders & organisations",
+    to: "/organisations" as const,
+    tone: "clay" as const,
+  },
+  {
+    image: indImg,
+    eyebrow: "Individuals",
+    title: "Reflective support for people navigating change.",
+    body: "One-to-one coaching and reflective space for identity, transition, confidence, purpose, belonging and the questions that shape what comes next.",
+    cta: "Explore individual work",
+    to: "/individuals" as const,
+    tone: "rose" as const,
+  },
+  {
+    image: expImg,
+    eyebrow: "Experiences",
+    title: "Gatherings, workshops and spaces for reflection.",
+    body: "Retreats, workshops, community gatherings, hosting, speaking and facilitated conversations designed with depth, care and intention.",
+    cta: "Explore experiences",
+    to: "/experiences" as const,
+    tone: "sage" as const,
+  },
 ];
 
 function Home() {
@@ -68,8 +82,12 @@ function Home() {
               ))}
             </div>
             <p className="mt-8 max-w-xl text-lg leading-relaxed text-foreground/80">
+              These moments can feel uncomfortable. They can also become the
+              most transformative chapters of our lives.
+            </p>
+            <p className="mt-4 max-w-xl text-lg leading-relaxed text-foreground/80">
               The Space Between exists to help people and organisations navigate
-              these moments with clarity, compassion and courage.
+              them with clarity, compassion and courage.
             </p>
             <div className="mt-10 flex flex-wrap gap-3">
               <Link
@@ -137,10 +155,10 @@ function Home() {
           <div className="grid gap-6 md:grid-cols-2">
             <PathwayCard
               image={orgImg}
-              eyebrow="For organisations"
-              title="Helping organisations move through change without leaving their people behind."
-              body="I partner with mission-led organisations to navigate change while keeping people, values and trust at the centre. Through executive coaching, leadership development, facilitation and listening spaces, I bridge the gap between leadership intention and employee experience."
-              cta="Explore organisational work"
+              eyebrow="For leaders & organisations"
+              title="Helping leaders and organisations move through change without leaving their people behind."
+              body="I partner with leaders and mission-led organisations to navigate change while keeping people, values and trust at the centre. Through executive thought partnership, leadership development, facilitation and listening spaces, I bridge the gap between leadership intention and employee experience."
+              cta="Explore leaders & organisations"
               to="/organisations"
               tone="clay"
             />
@@ -199,20 +217,10 @@ function Home() {
               Many shapes. One intention.
             </h2>
           </div>
-          <ul className="grid gap-px overflow-hidden rounded-[1.5rem] border border-foreground/15 bg-foreground/10 sm:grid-cols-2 md:grid-cols-3">
-            {experiences.map((e) => (
-              <li key={e} className="bg-cream/80 p-6 font-serif text-lg text-foreground">
-                {e}
-              </li>
+          <div className="grid gap-6 md:grid-cols-3">
+            {ways.map((w) => (
+              <PathwayCard key={w.eyebrow} {...w} />
             ))}
-          </ul>
-          <div className="mt-10">
-            <Link
-              to="/experiences"
-              className="inline-flex items-center gap-2 text-sm text-foreground hover:text-terracotta"
-            >
-              Explore experiences <span aria-hidden>→</span>
-            </Link>
           </div>
         </div>
       </section>
@@ -257,9 +265,11 @@ function PathwayCard({
   title: string;
   body: string;
   cta: string;
-  to: "/organisations" | "/individuals";
-  tone: "clay" | "rose";
+  to: "/organisations" | "/individuals" | "/experiences";
+  tone: "clay" | "rose" | "sage";
 }) {
+  const toneColor = tone === "clay" ? "var(--terracotta)" : tone === "rose" ? "var(--rose)" : "var(--sage)";
+
   return (
     <Link
       to={to}
@@ -276,7 +286,7 @@ function PathwayCard({
         />
       </div>
       <div className="flex flex-1 flex-col p-8">
-        <p className="eyebrow" style={{ color: tone === "clay" ? "var(--terracotta)" : "var(--rose)" }}>
+        <p className="eyebrow" style={{ color: toneColor }}>
           {eyebrow}
         </p>
         <h3 className="mt-3 font-serif text-2xl leading-snug text-foreground md:text-3xl">
