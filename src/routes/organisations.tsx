@@ -4,17 +4,17 @@ import orgImg from "@/assets/organizations-visual.jpg";
 export const Route = createFileRoute("/organisations")({
   head: () => ({
     meta: [
-      { title: "For Organisations — People-Centred Change — The Space Between" },
+      { title: "For Leaders & Organisations — People-Centred Change — The Space Between" },
       {
         name: "description",
         content:
-          "Executive coaching, leadership development, facilitation and listening spaces for mission-led organisations navigating change — bridging leadership intention and employee experience.",
+          "Executive thought partnership, leadership development, facilitation and listening spaces for leaders and mission-led organisations navigating change.",
       },
-      { property: "og:title", content: "For Organisations — The Space Between" },
+      { property: "og:title", content: "For Leaders & Organisations — The Space Between" },
       {
         property: "og:description",
         content:
-          "Helping organisations move through change without leaving their people behind.",
+          "Helping leaders and organisations move through change without leaving their people behind.",
       },
     ],
   }),
@@ -33,8 +33,19 @@ const situations = [
   "Public sector and mission-led organisations navigating complex people dynamics",
 ];
 
+const people = [
+  "CEOs and founders",
+  "Executive teams",
+  "Senior leaders",
+  "People & Culture teams",
+  "Mission-led organisations",
+  "Public sector organisations",
+  "Social enterprises",
+  "Growing start-ups",
+];
+
 const services = [
-  { n: "01", title: "Executive Coaching", body: "One-to-one work with senior leaders navigating pressure, transition or the weight of holding others through change." },
+  { n: "01", title: "Executive Thought Partnership", body: "A confidential space for founders, CEOs and senior leaders to think more clearly through complexity, challenge assumptions and stay connected to the human experience of leading others." },
   { n: "02", title: "Leadership Development", body: "Building the reflective, human capabilities leaders need to lead through complexity rather than around it." },
   { n: "03", title: "People Strategy for Start-ups", body: "Helping early-stage organisations build the culture, clarity and people practices they'll want to be proud of later." },
   { n: "04", title: "Facilitation", body: "Structured spaces for honest conversation, alignment and decision-making — from leadership offsites to whole-team gatherings." },
@@ -61,14 +72,15 @@ function Organisations() {
       <section className="surface-warm">
         <div className="container-prose grid gap-10 pb-24 pt-20 md:grid-cols-12 md:pb-32 md:pt-28">
           <div className="md:col-span-7">
-            <p className="eyebrow">For organisations</p>
+            <p className="eyebrow">For leaders & organisations</p>
             <h1 className="mt-6 text-4xl leading-[1.05] text-foreground md:text-6xl">
-              Helping organisations move through change{" "}
+              Helping leaders and organisations move through change{" "}
               <span className="italic text-terracotta">without leaving their people behind.</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-              People-centred change for mission-led organisations navigating
-              the space between what was and what comes next.
+              People-centred change and trusted thought partnership for leaders
+              and mission-led organisations navigating the space between what
+              was and what comes next.
             </p>
             <div className="mt-10">
               <Link
@@ -98,15 +110,41 @@ function Organisations() {
       <section className="py-28 md:py-36">
         <div className="container-prose max-w-3xl">
           <p className="font-serif text-2xl leading-snug text-foreground md:text-3xl">
-            I partner with mission-led organisations to navigate change in a
-            way that keeps people, values and trust at the centre.
+            I partner with leaders and mission-led organisations to navigate
+            change in a way that keeps people, values and trust at the centre.
           </p>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            Through executive coaching, listening spaces, facilitation,
-            leadership development and one-to-one support, I help leaders
-            understand the human experience of change — bridging the gap
+            Through executive thought partnership, listening spaces,
+            facilitation, leadership development and one-to-one support, I help
+            leaders understand the human experience of change — bridging the gap
             between leadership intention and employee experience.
           </p>
+          <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+            Whether I'm working alongside a founder, CEO, executive team, line
+            manager or the people experiencing change day to day, my role is the
+            same: to create the conditions for clearer thinking, more honest
+            conversations and change that people can genuinely move through
+            together.
+          </p>
+        </div>
+      </section>
+
+      {/* WHO I WORK WITH */}
+      <section className="surface-clay py-24 md:py-28">
+        <div className="container-prose grid gap-12 md:grid-cols-12">
+          <div className="md:col-span-4">
+            <p className="eyebrow">Who I work with</p>
+            <h2 className="mt-4 text-3xl text-foreground md:text-4xl">
+              Support for the people holding change.
+            </h2>
+          </div>
+          <ul className="md:col-span-8 grid gap-px overflow-hidden rounded-[1.5rem] border border-foreground/15 bg-foreground/10 sm:grid-cols-2">
+            {people.map((p) => (
+              <li key={p} className="bg-cream/80 p-6 font-serif text-lg text-foreground">
+                {p}
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
@@ -133,9 +171,9 @@ function Organisations() {
       <section className="py-24 md:py-32">
         <div className="container-prose">
           <div className="mb-14 max-w-2xl">
-            <p className="eyebrow">Organisational services</p>
+            <p className="eyebrow">Services</p>
             <h2 className="mt-4 text-3xl text-foreground md:text-4xl">
-              How I support organisations
+              How I support leaders and organisations
             </h2>
           </div>
           <div className="grid gap-px overflow-hidden rounded-[1.5rem] border border-border bg-border md:grid-cols-2 lg:grid-cols-3">
@@ -148,6 +186,33 @@ function Organisations() {
                 <p className="mt-4 text-muted-foreground">{s.body}</p>
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* EXPERIENCE */}
+      <section className="surface-warm py-24 md:py-28">
+        <div className="container-prose grid gap-12 md:grid-cols-12">
+          <div className="md:col-span-4">
+            <p className="eyebrow">Experience</p>
+            <h2 className="mt-4 text-3xl text-foreground md:text-4xl">
+              Experience from inside change
+            </h2>
+          </div>
+          <div className="md:col-span-8 space-y-6 text-lg leading-relaxed text-muted-foreground">
+            <p>
+              This work is grounded in lived experience.
+            </p>
+            <p>
+              As an employee representative during a major organisational
+              redundancy process, Helena supported colleagues through
+              uncertainty, gathered employee concerns, and worked closely with
+              senior leaders to bridge the gap between what people were
+              experiencing and how change was being led.
+            </p>
+            <p className="font-serif text-2xl leading-snug text-foreground md:text-3xl">
+              This experience continues to shape her approach today.
+            </p>
           </div>
         </div>
       </section>
@@ -186,8 +251,8 @@ function Organisations() {
             Start with a discovery call.
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-cream/75">
-            If your organisation is moving through change and you want to
-            understand the people impact more clearly, book a discovery call.
+            If you're leading through change and want to understand the people
+            impact more clearly, book a discovery call.
           </p>
           <div className="mt-10">
             <Link
