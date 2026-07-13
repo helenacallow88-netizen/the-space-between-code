@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import indImg from "@/assets/individuals-visual.jpg";
+import indImgAsset from "@/assets/IMG_3951_1.jpg.asset.json";
 
 export const Route = createFileRoute("/individuals")({
   head: () => ({
@@ -59,8 +59,8 @@ function Individuals() {
           <div className="md:col-span-5">
             <div className="aspect-[4/5] overflow-hidden rounded-[2rem]">
               <img
-                src={indImg}
-                alt="Soft rolling hills at dawn in warm rose and clay tones"
+                src={indImgAsset.url}
+                alt="Portrait of a woman seated in quiet reflection among rocks"
                 width={1400}
                 height={1000}
                 loading="lazy"
