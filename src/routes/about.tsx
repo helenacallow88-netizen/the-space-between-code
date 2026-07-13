@@ -4,17 +4,17 @@ import aboutAsset from "@/assets/helena-about.jpg.asset.json";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — A Bridge Between Worlds — The Space Between" },
+      { title: "About Helena — The Space Between" },
       {
         name: "description",
         content:
-          "Over a decade coaching, leading and supporting organisations through change. The founder of The Space Between on the work, the roots and the way she moves through it.",
+          "Meet Helena, founder of The Space Between: a trusted thought partner, facilitator and one-to-one coach helping people and organisations navigate change, identity and belonging.",
       },
-      { property: "og:title", content: "About — The Space Between" },
+      { property: "og:title", content: "About Helena — The Space Between" },
       {
         property: "og:description",
         content:
-          "A calm presence. A thoughtful challenger. A trusted guide through uncertainty.",
+          "A calm presence, thoughtful challenger and trusted guide through uncertainty — for people and organisations navigating change.",
       },
     ],
   }),
@@ -23,10 +23,12 @@ export const Route = createFileRoute("/about")({
 
 const credentials = [
   "Over 10 years in people development",
+  "Years of one-to-one coaching and reflective support",
   "Coaching, managing and leading teams",
   "Supporting teams through organisational change",
   "Experience with redundancy processes",
   "Employee representative during a major redundancy",
+  "EDI champion and founder of a people of colour network",
   "Trusted by senior leaders and frontline employees alike",
 ];
 
@@ -42,15 +44,12 @@ function About() {
               A bridge between{" "}
               <span className="italic text-terracotta">worlds.</span>
             </h1>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-              A calm presence.
-              <br />
-              A thoughtful challenger.
-              <br />
-              A trusted guide through uncertainty.
-              <br />
-              Helping people feel seen, heard and able to move forward.
-            </p>
+            <div className="mt-6 max-w-xl space-y-1.5 font-serif text-lg leading-relaxed text-muted-foreground md:text-xl">
+              <p>A calm presence.</p>
+              <p>A thoughtful challenger.</p>
+              <p>A trusted guide through uncertainty.</p>
+              <p>Helping people feel seen, heard and able to move forward.</p>
+            </div>
           </div>
           <div className="md:col-span-5">
             <div className="aspect-[3/4] overflow-hidden rounded-[2rem]">
@@ -77,35 +76,28 @@ function About() {
               change.
             </p>
             <p>
-              My work sits at the meeting point between the professional and
-              the deeply human. I am often the person people open up to. Not
-              because I force it, but because I create spaces where people feel
-              seen, heard and understood.
+              My work sits at the meeting point between the professional and the
+              deeply human. I am often the person people open up to. Not because I
+              force it, but because I create spaces where people feel seen, heard
+              and understood.
+            </p>
+            <p>
+              In organisations, that might mean becoming a trusted thought partner
+              to a CEO, helping a leadership team hear what employees are really
+              experiencing, or holding honest conversations during a difficult
+              period of change.
+            </p>
+            <p>
+              One-to-one, it means offering a reflective space for someone
+              navigating a career transition, questioning who they are becoming,
+              rebuilding confidence or trying to understand what they need next.
+              I do not arrive with all the answers. I listen closely, reflect what
+              I notice and help people hear themselves more clearly.
             </p>
             <p>
               Over time, I realised I was not only teaching leadership or
-              supporting change. I was helping people come home to themselves —
-              to the parts they had adapted or quietened in order to belong.
-            </p>
-            <p>
-              As someone who is mixed race and has often lived between
-              different worlds, I understand the complexity of belonging. I know
-              what it can feel like to sit between cultures, identities,
-              expectations and versions of yourself, wondering where you truly
-              fit.
-            </p>
-            <p>
-              What I have learned is that belonging does not always come from
-              choosing one side or becoming easier for others to understand. It
-              can come from honouring the whole of who you are — the strength
-              and the softness, the clarity and the uncertainty, the joy and the
-              weight.
-            </p>
-            <p>
-              The Space Between was created from that place. It is a home for
-              the conversations, coaching, movement, reflection and human
-              connection that help people feel less fragmented and more fully
-              themselves.
+              supporting change. I was helping people come home to themselves — to
+              the parts they had adapted, hidden or quietened in order to belong.
             </p>
           </div>
           <aside className="md:col-span-5">
@@ -124,6 +116,42 @@ function About() {
         </div>
       </section>
 
+      {/* LIVED EXPERIENCE */}
+      <section className="surface-clay py-24 md:py-28">
+        <div className="container-prose grid gap-12 md:grid-cols-12">
+          <div className="md:col-span-4">
+            <p className="eyebrow">Belonging</p>
+            <h2 className="mt-4 text-3xl text-foreground md:text-4xl">
+              The roots of this work are personal.
+            </h2>
+          </div>
+          <div className="md:col-span-8 space-y-6 text-lg leading-relaxed text-muted-foreground">
+            <p>
+              As a mixed-race woman, I have spent much of my life navigating the
+              space between cultures, identities and expectations. I understand
+              what it can feel like to be difficult to place, to move between
+              different worlds, or to wonder which parts of yourself are welcome
+              in a room.
+            </p>
+            <p>
+              That lived experience shapes how I work with everyone, and it gives
+              me a particular commitment to people of colour and others from
+              underrepresented groups who have felt unseen, underestimated or
+              required to fragment themselves in order to belong.
+            </p>
+            <p className="font-serif text-2xl leading-snug text-foreground md:text-3xl">
+              I believe belonging does not ask us to choose one side. It makes room
+              for the whole of who we are.
+            </p>
+            <p>
+              The Space Between was created from that place: a home for the
+              conversations, coaching, reflection, movement and human connection
+              that help people feel less fragmented and more fully themselves.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* HOW I WORK */}
       <section className="surface-sage py-24">
         <div className="container-prose grid gap-12 md:grid-cols-12">
@@ -135,26 +163,73 @@ function About() {
           </div>
           <div className="md:col-span-8 space-y-6 text-lg leading-relaxed text-muted-foreground">
             <p>
-              I work in an emergent way. I am curious about people, places,
-              organisations and systems. I bring creativity, playfulness and
+              Whether I am working with an individual, a CEO or a whole team, I
+              begin with listening. I am curious about people, places,
+              organisations and systems, and I bring creativity, playfulness and
               body-based awareness into the work where it helps.
             </p>
             <p>
-              I do not believe transformation only happens through talking. It
-              can happen through movement, laughter, quiet, creativity, honest
+              I do not believe transformation only happens through talking. It can
+              happen through movement, laughter, quiet, creativity, honest
               reflection and the moment someone feels able to say what is true.
             </p>
             <p>
-              I can speak with senior leaders, professionals, junior employees
-              and people from all walks of life. Trust tends to form quickly —
-              because I meet people as they are, not as I think they should be.
+              I can speak with senior leaders, professionals, junior employees and
+              people from all walks of life. Trust tends to form quickly because I
+              meet people as they are, not as I think they should be.
             </p>
             <p>
-              This is the heart of The Space Between: a space where you do not
-              have to perform, shrink yourself or choose between different parts
-              of who you are. A space to explore, reconnect, move, reflect and
-              belong — exactly as you are.
+              This is the heart of The Space Between: a space where you do not have
+              to perform, shrink yourself or choose between different parts of who
+              you are. A space to explore, reconnect, move, reflect and belong —
+              exactly as you are.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* WAYS TO WORK TOGETHER */}
+      <section className="py-24 md:py-28">
+        <div className="container-prose">
+          <div className="mb-12 max-w-2xl">
+            <p className="eyebrow">Ways to work together</p>
+            <h2 className="mt-4 text-3xl text-foreground md:text-4xl">
+              The same approach, shaped for different contexts.
+            </h2>
+          </div>
+          <div className="grid gap-6 md:grid-cols-2">
+            <Link
+              to="/organisations"
+              className="group rounded-[1.5rem] border border-border bg-card p-8 transition-shadow hover:shadow-[0_20px_50px_-20px_rgba(60,30,15,0.25)]"
+            >
+              <p className="eyebrow">For leaders & organisations</p>
+              <h3 className="mt-4 font-serif text-2xl text-foreground md:text-3xl">
+                People-centred change, leadership and thought partnership.
+              </h3>
+              <p className="mt-4 text-muted-foreground">
+                Support for leaders and teams navigating change, culture,
+                belonging and complex people dynamics.
+              </p>
+              <span className="mt-8 inline-flex items-center gap-2 text-sm text-foreground">
+                Explore organisational work <span aria-hidden>→</span>
+              </span>
+            </Link>
+            <Link
+              to="/individuals"
+              className="group rounded-[1.5rem] border border-border bg-card p-8 transition-shadow hover:shadow-[0_20px_50px_-20px_rgba(60,30,15,0.25)]"
+            >
+              <p className="eyebrow">For individuals</p>
+              <h3 className="mt-4 font-serif text-2xl text-foreground md:text-3xl">
+                One-to-one space for change, identity and becoming.
+              </h3>
+              <p className="mt-4 text-muted-foreground">
+                Reflective support for people navigating transitions, confidence,
+                purpose, belonging or the question of what comes next.
+              </p>
+              <span className="mt-8 inline-flex items-center gap-2 text-sm text-foreground">
+                Explore one-to-one work <span aria-hidden>→</span>
+              </span>
+            </Link>
           </div>
         </div>
       </section>
