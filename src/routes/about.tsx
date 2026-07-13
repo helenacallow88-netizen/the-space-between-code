@@ -54,7 +54,7 @@ function About() {
           <div className="md:col-span-5">
             <div className="aspect-[3/4] overflow-hidden rounded-[2rem]">
               <img
-                src={aboutAsset.url}
+                src={aboutImage}
                 alt="Portrait of Helena, founder of The Space Between"
                 width={1200}
                 height={1400}
