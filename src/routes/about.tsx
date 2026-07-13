@@ -49,8 +49,8 @@ function About() {
           <div className="md:col-span-5">
             <div className="aspect-[3/4] overflow-hidden rounded-[2rem]">
               <img
-                src={aboutImg}
-                alt="Warm layered horizon lines in clay and sand"
+                src={aboutAsset.url}
+                alt="Portrait of Helena, founder of The Space Between"
                 width={1200}
                 height={1400}
                 loading="lazy"
