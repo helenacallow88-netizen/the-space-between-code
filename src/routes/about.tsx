@@ -13,7 +13,8 @@ export const Route = createFileRoute("/about")({
       { property: "og:title", content: "About — The Space Between" },
       {
         property: "og:description",
-        content: "A bridge between corporate and human, strategic and emotional.",
+        content:
+          "A calm presence. A thoughtful challenger. A trusted guide through uncertainty.",
       },
     ],
   }),
@@ -42,8 +43,13 @@ function About() {
               <span className="italic text-terracotta">worlds.</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-              Corporate and human. Strategic and emotional. Professional and
-              personal. Grounded and creative.
+              A calm presence.
+              <br />
+              A thoughtful challenger.
+              <br />
+              A trusted guide through uncertainty.
+              <br />
+              Helping people feel seen, heard and able to move forward.
             </p>
           </div>
           <div className="md:col-span-5">
