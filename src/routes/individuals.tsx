@@ -59,7 +59,7 @@ function Individuals() {
           <div className="md:col-span-5">
             <div className="aspect-[4/5] overflow-hidden rounded-[2rem]">
               <img
-                src={indImgAsset.url}
+                src={individualsImage}
                 alt="Portrait of a woman seated in quiet reflection among rocks"
                 width={1400}
                 height={1000}
