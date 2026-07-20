@@ -156,7 +156,7 @@ function Home() {
             <PathwayCard
               image={orgImg}
               eyebrow="For leaders & organisations"
-              title="Helping leaders and organisations move through change without leaving their people behind."
+              title="Helping organisations move through change without losing the trust of their people."
               body="I partner with leaders and mission-led organisations to navigate change while keeping people, values and trust at the centre. Through executive thought partnership, leadership development, facilitation and listening spaces, I bridge the gap between leadership intention and employee experience."
               cta="Explore leaders & organisations"
               to="/organisations"
