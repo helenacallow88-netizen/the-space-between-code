@@ -14,7 +14,7 @@ export const Route = createFileRoute("/organisations")({
       {
         property: "og:description",
         content:
-          "Helping leaders and organisations move through change without leaving their people behind.",
+          "Helping organisations move through change without losing the trust of their people.",
       },
     ],
   }),
