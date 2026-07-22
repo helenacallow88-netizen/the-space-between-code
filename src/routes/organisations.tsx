@@ -74,8 +74,8 @@ function Organisations() {
           <div className="md:col-span-7">
             <p className="eyebrow">For leaders & organisations</p>
             <h1 className="mt-6 text-4xl leading-[1.05] text-foreground md:text-6xl">
-              Helping leaders and organisations move through change{" "}
-              <span className="italic text-terracotta">without leaving their people behind.</span>
+              Helping organisations move through change{" "}
+              <span className="italic text-terracotta">without losing the trust of their people.</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
               People-centred change and trusted thought partnership for leaders
