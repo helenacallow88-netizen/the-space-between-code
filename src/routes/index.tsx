@@ -7,57 +7,47 @@ import expImg from "@/assets/experiences-visual.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "The Space Between — Navigating Change with Clarity, Compassion and Courage" },
+      { title: "The Space Between — Clarity, Courage and Connection Through Change" },
       {
         name: "description",
         content:
-          "The Space Between helps people and organisations navigate the moments between where they have been and where they are becoming — with clarity, compassion and courage.",
+          "Helping people and organisations move through life's in-between moments with greater clarity, courage and connection.",
       },
       { property: "og:title", content: "The Space Between" },
       {
         property: "og:description",
         content:
-          "A place for the honest conversations, thoughtful leadership and human connection that make meaningful change possible.",
+          "When people feel genuinely seen, heard and understood, they think more clearly, communicate more honestly and move forward with greater confidence.",
       },
     ],
   }),
   component: Home,
 });
 
-const betweens = [
-  "Between certainty and uncertainty.",
-  "Between who we've been and who we're becoming.",
-  "Between endings and beginnings.",
-  "Between leadership intention and employee experience.",
-  "Between identities.",
-  "Between cultures.",
-  "Between possibility and action.",
-];
-
 const ways = [
   {
     image: orgImg,
-    eyebrow: "Leaders & Organisations",
-    title: "People-centred change, leadership and thought partnership.",
-    body: "Executive thought partnership, leadership development, facilitation, people strategy for start-ups and people-centred organisational change.",
-    cta: "Explore leaders & organisations",
+    eyebrow: "Organisations",
+    title: "Navigate change while protecting trust, culture and performance.",
+    body: "People-centred support that helps leaders understand what their people are experiencing, communicate with clarity and treat people with fairness and respect — even when decisions are difficult.",
+    cta: "Explore organisational support",
     to: "/organisations" as const,
     tone: "clay" as const,
   },
   {
     image: indImg,
     eyebrow: "Individuals",
-    title: "Reflective support for people navigating change.",
-    body: "One-to-one coaching and reflective space for identity, transition, confidence, purpose, belonging and the questions that shape what comes next.",
-    cta: "Explore individual work",
+    title: "Find clarity when life feels uncertain.",
+    body: "A thoughtful, supportive space to untangle what is happening, understand yourself more deeply and take your next step with greater confidence and self-trust.",
+    cta: "Explore individual support",
     to: "/individuals" as const,
     tone: "rose" as const,
   },
   {
     image: expImg,
     eyebrow: "Experiences",
-    title: "Gatherings, workshops and spaces for reflection.",
-    body: "Retreats, workshops, community gatherings, hosting, speaking and facilitated conversations designed with depth, care and intention.",
+    title: "Create honest conversation and meaningful connection.",
+    body: "Facilitation, speaking, workshops, retreats and community experiences that help people slow down, engage openly and connect more deeply with themselves and each other.",
     cta: "Explore experiences",
     to: "/experiences" as const,
     tone: "sage" as const,
@@ -73,28 +63,33 @@ function Home() {
           <div className="md:col-span-7 md:pr-6">
             <p className="eyebrow">The Space Between</p>
             <h1 className="mt-8 text-balance text-4xl leading-[1.05] text-foreground md:text-6xl lg:text-7xl">
-              We all find ourselves in the{" "}
-              <span className="italic text-terracotta">space between.</span>
+              Helping people move through life's in-between moments with greater{" "}
+              <span className="italic text-terracotta">
+                clarity, courage and connection.
+              </span>
             </h1>
-            <div className="mt-10 max-w-xl space-y-1.5 font-serif text-lg leading-relaxed text-muted-foreground md:text-xl">
-              {betweens.map((b) => (
-                <p key={b}>{b}</p>
-              ))}
-            </div>
-            <p className="mt-8 max-w-xl text-lg leading-relaxed text-foreground/80">
-              These moments can feel uncomfortable. They can also become the
-              most transformative chapters of our lives.
+            <p className="mt-10 max-w-xl font-serif text-xl leading-relaxed text-foreground md:text-2xl">
+              When people feel genuinely seen, heard and understood, they think
+              more clearly, communicate more honestly and move forward with
+              greater confidence. That's the environment I create.
             </p>
-            <p className="mt-4 max-w-xl text-lg leading-relaxed text-foreground/80">
-              The Space Between exists to help people and organisations navigate
-              them with clarity, compassion and courage.
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-foreground/80">
+              Whether you're leading an organisation through change or facing a
+              significant transition in your own life, this is a place to make
+              sense of what is happening and find a constructive way forward.
             </p>
             <div className="mt-10 flex flex-wrap gap-3">
               <Link
-                to="/about"
+                to="/organisations"
                 className="inline-flex items-center rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground transition-opacity hover:opacity-90"
               >
-                Explore how we work
+                For organisations
+              </Link>
+              <Link
+                to="/individuals"
+                className="inline-flex items-center rounded-full border border-foreground/20 bg-transparent px-6 py-3 text-sm text-foreground transition-colors hover:bg-foreground/5"
+              >
+                For individuals
               </Link>
             </div>
           </div>
@@ -112,109 +107,117 @@ function Home() {
         </div>
       </section>
 
-      {/* PHILOSOPHY */}
+      {/* WHY THIS MATTERS */}
       <section className="py-28 md:py-36">
         <div className="container-prose grid gap-12 md:grid-cols-12">
           <div className="md:col-span-4">
-            <p className="eyebrow">Philosophy</p>
+            <p className="eyebrow">Why this matters</p>
             <h2 className="mt-4 text-3xl text-foreground md:text-4xl">
-              The Space Between is often uncomfortable.
+              Change affects more than plans and processes. It affects people.
             </h2>
           </div>
           <div className="md:col-span-8 space-y-6 text-lg leading-relaxed text-muted-foreground">
             <p>
-              It's where identities shift. Where organisations evolve. Where
-              careers change. Where relationships transform. Where leadership
-              is tested.
+              When people don't feel heard, trust begins to erode. Communication
+              becomes harder, relationships become strained and uncertainty can
+              quickly turn into resistance, stress or disengagement.
+            </p>
+            <p>
+              The same is true in our personal lives. When everything feels
+              tangled or unclear, it is difficult to make decisions, trust our
+              judgement or know what to do next.
             </p>
             <p className="font-serif text-2xl leading-snug text-foreground md:text-3xl">
-              Yet it is also where growth happens.
+              Feeling properly listened to creates room for something to shift.
             </p>
             <p>
-              This isn't a place to rush through. It's a place to understand.
-            </p>
-            <p>
-              Because when we make space for honest conversations, thoughtful
-              leadership and genuine human connection, change becomes something
-              people move through together — rather than something that happens
-              to them.
+              Thinking becomes clearer. Conversations become more honest. People
+              feel respected and better able to understand themselves, each
+              other and the situation they are facing. That is where meaningful
+              progress begins.
             </p>
           </div>
         </div>
       </section>
 
-      {/* CHOOSE YOUR PATH */}
+      {/* THE DIFFERENCE */}
       <section className="surface-clay py-24 md:py-32">
         <div className="container-prose">
           <div className="mb-14 max-w-2xl">
-            <p className="eyebrow">Choose your path</p>
+            <p className="eyebrow">The difference this work makes</p>
             <h2 className="mt-4 text-3xl text-foreground md:text-4xl">
-              Where would you like to begin?
+              Practical outcomes, centred around people.
             </h2>
           </div>
           <div className="grid gap-6 md:grid-cols-2">
-            <PathwayCard
-              image={orgImg}
-              eyebrow="For leaders & organisations"
-              title="Helping organisations move through change without losing the trust of their people."
-              body="I partner with leaders and mission-led organisations to navigate change while keeping people, values and trust at the centre. Through executive thought partnership, leadership development, facilitation and listening spaces, I bridge the gap between leadership intention and employee experience."
-              cta="Explore leaders & organisations"
-              to="/organisations"
-              tone="clay"
-            />
-            <PathwayCard
-              image={indImg}
+            <OutcomeCard
               eyebrow="For individuals"
-              title="Helping people navigate life's transitions with greater clarity and confidence."
-              body="Whether you're questioning your career, identity, relationships or next chapter, I create reflective spaces that help you reconnect with yourself and move forward with intention."
-              cta="Explore individual work"
-              to="/individuals"
-              tone="rose"
+              title="Feel clearer, calmer and more able to trust yourself."
+              outcomes={[
+                "Untangle what is really going on and understand yourself more deeply.",
+                "Make decisions you can stand behind and take your next step with confidence.",
+                "Reduce stress and overthinking by creating space for clearer perspective.",
+                "Communicate more honestly and build healthier relationships.",
+                "Feel more comfortable with who you are and more hopeful about what comes next.",
+              ]}
+            />
+            <OutcomeCard
+              eyebrow="For organisations"
+              title="Move through change without losing the trust of your people."
+              outcomes={[
+                "Help people feel heard, respected and treated fairly throughout change.",
+                "Give leaders a clearer understanding of the employee experience.",
+                "Improve communication, engagement and motivation across teams.",
+                "Strengthen trust and culture, even when difficult decisions must be made.",
+                "Protect relationships and reputation by helping people leave with dignity rather than resentment.",
+              ]}
             />
           </div>
         </div>
       </section>
 
-      {/* WHY HELENA */}
+      {/* HOW I WORK */}
       <section className="py-28 md:py-36">
         <div className="container-prose grid gap-12 md:grid-cols-12">
           <div className="md:col-span-4">
-            <p className="eyebrow">Why Helena</p>
+            <p className="eyebrow">How I work</p>
             <h2 className="mt-4 text-3xl text-foreground md:text-4xl">
-              A rare ability to help people feel deeply seen.
+              Space to think clearly, speak honestly and move forward.
             </h2>
           </div>
           <div className="md:col-span-8 space-y-6 text-lg leading-relaxed text-muted-foreground">
             <p>
-              Helena combines over a decade of leadership development
-              experience with a rare ability to help people feel deeply seen.
+              I don't arrive with a fixed answer or assume that people need
+              fixing. I listen carefully, ask thoughtful questions and create
+              the conditions for honest conversation.
             </p>
             <p>
-              She creates environments where people think more clearly, have
-              braver conversations and discover perspectives they couldn't
-              reach alone.
+              That environment helps individuals see themselves and their
+              choices more clearly. In organisations, it helps leaders
+              understand what is happening beneath the surface and gives people
+              a constructive way to say what needs to be said.
             </p>
             <p>
-              Whether working with a CEO, a leadership team or someone
-              navigating a personal crossroads, her work is grounded in
-              curiosity, compassion and meaningful challenge.
+              My approach is warm, direct and people-centred. It combines deep
+              listening with compassionate challenge, so insight does not remain
+              an idea — it can lead to stronger relationships, better decisions
+              and meaningful progress.
             </p>
             <p className="font-serif text-2xl leading-snug text-foreground md:text-3xl">
-              The Space Between isn't about having the answers. It's about
-              creating the conditions where better questions, deeper
-              conversations and meaningful change can emerge.
+              I create the environment. You discover what becomes possible
+              within it.
             </p>
           </div>
         </div>
       </section>
 
-      {/* WAYS TO EXPERIENCE */}
+      {/* WAYS TO WORK TOGETHER */}
       <section className="surface-sage py-24 md:py-28">
         <div className="container-prose">
           <div className="mb-14 max-w-2xl">
-            <p className="eyebrow">Ways to experience The Space Between</p>
+            <p className="eyebrow">Ways we can work together</p>
             <h2 className="mt-4 text-3xl text-foreground md:text-4xl">
-              Many shapes. One intention.
+              Support shaped around the outcome you need.
             </h2>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
@@ -225,17 +228,57 @@ function Home() {
         </div>
       </section>
 
+      {/* THE STORY */}
+      <section className="py-28 md:py-36">
+        <div className="container-prose grid gap-12 md:grid-cols-12">
+          <div className="md:col-span-4">
+            <p className="eyebrow">The story behind The Space Between</p>
+            <h2 className="mt-4 text-3xl text-foreground md:text-4xl">
+              It is not simply about transition. It is about what becomes
+              possible within the space.
+            </h2>
+          </div>
+          <div className="md:col-span-8 space-y-6 text-lg leading-relaxed text-muted-foreground">
+            <p>
+              The Space Between grew from my own experience of navigating
+              identity, belonging, change and the tension between different
+              worlds. Over time, I realised that the quality of the environment
+              around us can change how we experience uncertainty.
+            </p>
+            <p>
+              When a space is held with care, people do not have to rush,
+              perform or leave parts of themselves behind. They can be honest,
+              examine what is difficult and see themselves and the situation
+              more clearly.
+            </p>
+            <p className="font-serif text-2xl leading-snug text-foreground md:text-3xl">
+              The value is not the in-between moment itself. It is the clarity,
+              trust, connection and movement that can emerge when that space is
+              held well.
+            </p>
+            <div className="pt-2">
+              <Link
+                to="/about"
+                className="inline-flex items-center gap-2 text-sm text-foreground"
+              >
+                Read more about Helena and the work <span aria-hidden>→</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FINAL CTA */}
       <section className="surface-ink py-24 md:py-32">
         <div className="container-prose max-w-3xl">
           <p className="eyebrow" style={{ color: "var(--rose)" }}>Begin</p>
           <h2 className="mt-4 font-serif text-4xl leading-tight text-cream md:text-5xl">
-            Start with a discovery conversation.
+            Start with a conversation.
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-cream/75">
-            Whether you're leading an organisation through change or navigating
-            your own transition, the first step is simple — a quiet conversation
-            to understand where you are and what may be needed.
+            Whether you're leading an organisation through change or trying to
+            understand what comes next in your own life, we can begin by talking
+            about where you are, what feels difficult and what you need.
           </p>
           <div className="mt-10">
             <Link
@@ -248,6 +291,33 @@ function Home() {
         </div>
       </section>
     </>
+  );
+}
+
+function OutcomeCard({
+  eyebrow,
+  title,
+  outcomes,
+}: {
+  eyebrow: string;
+  title: string;
+  outcomes: string[];
+}) {
+  return (
+    <div className="rounded-[1.75rem] border border-border bg-card p-8 md:p-10">
+      <p className="eyebrow text-terracotta">{eyebrow}</p>
+      <h3 className="mt-3 font-serif text-2xl leading-snug text-foreground md:text-3xl">
+        {title}
+      </h3>
+      <ul className="mt-6 space-y-4 text-muted-foreground">
+        {outcomes.map((outcome) => (
+          <li key={outcome} className="flex gap-3">
+            <span className="mt-1 text-terracotta" aria-hidden>✓</span>
+            <span>{outcome}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
 
