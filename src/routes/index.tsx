@@ -159,6 +159,29 @@ function Home() {
         </div>
       </section>
 
+      <section className="surface-warm py-24 md:py-32">
+        <div className="container-prose">
+          <div className="mb-14 max-w-2xl">
+            <p className="eyebrow">If we work together</p>
+            <h2 className="mt-4 text-3xl text-foreground md:text-4xl">
+              The work should leave something different behind.
+            </h2>
+            <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
+              Not just a good conversation or an enjoyable session. The aim is meaningful movement — in how people think, lead, communicate and work together.
+            </p>
+          </div>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            <ResultCard title="More clarity" body="People understand what is really going on, what matters and what needs to happen next." />
+            <ResultCard title="More trust" body="People feel heard and respected, making honest conversations and stronger relationships more possible." />
+            <ResultCard title="Better leadership" body="Leaders become more self-aware, adaptable and confident in getting the best from different people." />
+            <ResultCard title="Real movement" body="Insight turns into practical action — with greater alignment, ownership and energy behind what happens next." />
+          </div>
+          <p className="mt-12 max-w-3xl font-serif text-2xl leading-snug text-foreground md:text-3xl">
+            I want people to leave my work feeling more connected to themselves, each other and what they are trying to create — and more capable of doing something about it.
+          </p>
+        </div>
+      </section>
+
       <section className="surface-sage py-24 md:py-28">
         <div className="container-prose">
           <div className="mb-14 max-w-2xl">
@@ -228,6 +251,15 @@ function OutcomeCard({ eyebrow, title, outcomes }: { eyebrow: string; title: str
         ))}
       </ul>
     </div>
+  );
+}
+
+function ResultCard({ title, body }: { title: string; body: string }) {
+  return (
+    <article className="rounded-[1.5rem] border border-border bg-card p-7">
+      <h3 className="font-serif text-2xl text-foreground">{title}</h3>
+      <p className="mt-3 text-muted-foreground">{body}</p>
+    </article>
   );
 }
 
