@@ -75,22 +75,22 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "The Space Between — Navigating Change with Clarity, Compassion and Courage" },
+      { title: "The Space Between — Leadership & People Development" },
       {
         name: "description",
         content:
-          "The Space Between helps people, leaders and organisations navigate the moments between where they have been and where they are becoming.",
+          "Leadership and people development through coaching, facilitation, consultancy, hosting and human-centred experiences.",
       },
       { property: "og:title", content: "The Space Between" },
       {
         property: "og:description",
         content:
-          "A philosophy-led space for honest conversations, thoughtful leadership and meaningful change.",
+          "Developing people. Strengthening teams. Bringing rooms to life.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "The Space Between" },
-      { name: "twitter:description", content: "Helping people, leaders and organisations navigate change with clarity, compassion and courage." },
+      { name: "twitter:description", content: "Leadership and people development that puts the human back at the centre." },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9e2b2915-6e07-4968-ba3c-4d496f9df252/id-preview-f78cd0cc--9c1249b2-1d49-48b7-aa2c-8e99cf70a117.lovable.app-1783266273976.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9e2b2915-6e07-4968-ba3c-4d496f9df252/id-preview-f78cd0cc--9c1249b2-1d49-48b7-aa2c-8e99cf70a117.lovable.app-1783266273976.png" },
     ],
@@ -129,9 +129,9 @@ function SiteHeader() {
   const [open, setOpen] = useState(false);
   const links = [
     { to: "/", label: "Home" },
-    { to: "/organisations", label: "Leaders & Organisations" },
-    { to: "/individuals", label: "Individuals" },
-    { to: "/experiences", label: "Experiences" },
+    { to: "/organisations", label: "Organisations & Teams" },
+    { to: "/individuals", label: "Coaching" },
+    { to: "/experiences", label: "Hosting & Experiences" },
     { to: "/about", label: "About" },
     { to: "/contact", label: "Contact" },
   ] as const;
@@ -160,7 +160,7 @@ function SiteHeader() {
             to="/contact"
             className="rounded-full bg-primary px-4 py-2 text-xs text-primary-foreground transition-opacity hover:opacity-90"
           >
-            Book a conversation
+            Start a conversation
           </Link>
         </nav>
         <button
@@ -194,7 +194,7 @@ function SiteHeader() {
               onClick={() => setOpen(false)}
               className="mt-2 inline-flex w-fit rounded-full bg-primary px-4 py-2 text-xs text-primary-foreground"
             >
-              Book a conversation
+              Start a conversation
             </Link>
           </nav>
         </div>
@@ -210,16 +210,15 @@ function SiteFooter() {
         <div>
           <p className="font-serif text-xl text-foreground">The Space Between</p>
           <p className="mt-3 max-w-xs text-sm text-muted-foreground">
-            Helping people, leaders and organisations navigate change with
-            clarity, compassion and courage.
+            Developing people. Strengthening teams. Bringing rooms to life.
           </p>
         </div>
         <div>
           <p className="eyebrow">Explore</p>
           <ul className="mt-4 space-y-2 text-sm">
-            <li><Link to="/organisations" className="text-foreground hover:text-terracotta">Leaders & Organisations</Link></li>
-            <li><Link to="/individuals" className="text-foreground hover:text-terracotta">Individuals</Link></li>
-            <li><Link to="/experiences" className="text-foreground hover:text-terracotta">Experiences</Link></li>
+            <li><Link to="/organisations" className="text-foreground hover:text-terracotta">Organisations & Teams</Link></li>
+            <li><Link to="/individuals" className="text-foreground hover:text-terracotta">Coaching</Link></li>
+            <li><Link to="/experiences" className="text-foreground hover:text-terracotta">Hosting & Experiences</Link></li>
             <li><Link to="/about" className="text-foreground hover:text-terracotta">About</Link></li>
             <li><Link to="/contact" className="text-foreground hover:text-terracotta">Contact</Link></li>
           </ul>
@@ -227,21 +226,20 @@ function SiteFooter() {
         <div>
           <p className="eyebrow">Begin</p>
           <p className="mt-4 text-sm text-muted-foreground">
-            Every engagement starts with a discovery conversation — a grounded
-            first step to understand where you are and what may be needed.
+            Not sure which offer fits? Start with a conversation and we can work out what would be most useful.
           </p>
           <Link
             to="/contact"
             className="mt-4 inline-flex rounded-full border border-foreground/30 px-4 py-2 text-xs text-foreground transition-colors hover:bg-foreground hover:text-background"
           >
-            Book a conversation
+            Start a conversation
           </Link>
         </div>
       </div>
       <div className="border-t border-border/60">
         <div className="container-prose flex flex-col items-start justify-between gap-2 py-6 text-xs text-muted-foreground sm:flex-row sm:items-center">
           <p>© {new Date().getFullYear()} The Space Between. All rights reserved.</p>
-          <p className="font-serif italic">Between what was, and what comes next.</p>
+          <p className="font-serif italic">Clarity, courage and connection — in the moments that matter.</p>
         </div>
       </div>
     </footer>
