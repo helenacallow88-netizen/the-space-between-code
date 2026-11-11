@@ -72,6 +72,11 @@ function Consulting() {
             <p className="mt-5 font-serif text-xl leading-relaxed">“Rather than simply managing performance, she invested in people, challenged them to grow, and gave them the confidence to achieve more than they thought possible.”</p>
             <footer className="mt-7 text-sm text-muted-foreground">— John, former Performance &amp; Development Coach · Edited excerpts</footer>
           </blockquote>
+          <blockquote className="rounded-[1.5rem] border border-border bg-card p-8">
+            <p className="font-serif text-xl leading-relaxed">“H is an exceptional presenter and facilitator, able to bring complex ideas to life with clarity, warmth and purpose. As a manager, she leads with trust, creating the space and psychological safety for people to flourish rather than micromanaging them.”</p>
+            <p className="mt-5 font-serif text-xl leading-relaxed">“That combination of self-awareness, generosity and high standards is rare and hugely impactful.”</p>
+            <footer className="mt-7 text-sm text-muted-foreground">— Rab Macleod, Leadership Coach &amp; Facilitator, former direct report · Edited excerpts</footer>
+          </blockquote>
           <blockquote className="rounded-[1.5rem] border border-border bg-card p-8 md:col-span-2">
             <p className="font-serif text-xl leading-relaxed">“You have had a profound impact on so many, given people the space, your care, your time and so importantly, given them a voice.”</p>
             <footer className="mt-7 text-sm text-muted-foreground">— Julie, former Director</footer>
