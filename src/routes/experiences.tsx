@@ -9,8 +9,8 @@ export const Route = createFileRoute("/experiences")({
   component: Wellbeing,
 });
 const services = [
-  { title: "Indian Head Massage", meta: "45 minutes • £45", body: "A restorative treatment including upper back, shoulders, neck, head and face. Time to pause, soften and be cared for." },
-  { title: "Head & Hand Massage", meta: "Extended treatment • Enquire for options", body: "Combine Indian Head Massage with nurturing hand massage for a longer, more complete moment of rest." },
+  { title: "Indian Head Massage", meta: "45 minutes • £45", body: "A calming, seated massage focusing on the upper back, shoulders, neck, head and face. It can help ease everyday tension, encourage relaxation and leave you feeling refreshed and restored." },
+  { title: "Head & Hand Massage", meta: "75 minutes • £60", body: "Enjoy the seated Indian Head Massage alongside a nurturing hand massage, giving you more time to unwind, release tension and feel cared for." },
   { title: "Private Pamper Gatherings", meta: "From £35 per person • Bespoke", body: "Cosy, alcohol-free gatherings for friends, mums or small groups. Individual mini treatments, a welcome smoothie, herbal teas and homemade treats, with grounding or relaxation elements tailored to the group." },
   { title: "Workplace Wellbeing", meta: "For teams and organisations", body: "A thoughtful pause in the working day through massage, grounding, body-awareness exercises and practical techniques people can take away." },
   { title: "Movement & Connection", meta: "Workshops & groups", body: "Playful experiences that use movement, partner acro and embodied awareness to explore trust, communication and connection. Sessions tailored to participants' experience." },
