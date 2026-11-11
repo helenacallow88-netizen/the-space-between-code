@@ -67,6 +67,10 @@ function Consulting() {
             <p className="mt-5 font-serif text-xl leading-relaxed">“Above all, Helena is brave. She’ll speak truth to power. And speak truth to peers, as well.”</p>
             <footer className="mt-7 text-sm text-muted-foreground">— Kurtis, former CEO</footer>
           </blockquote>
+          <blockquote className="rounded-[1.5rem] border border-border bg-card p-8 md:col-span-2">
+            <p className="font-serif text-xl leading-relaxed">“You have had a profound impact on so many, given people the space, your care, your time and so importantly, given them a voice.”</p>
+            <footer className="mt-7 text-sm text-muted-foreground">— Julie, former Director</footer>
+          </blockquote>
         </div>
       </div></section>
 
