@@ -60,7 +60,7 @@ function Consulting() {
           <blockquote className="rounded-[1.5rem] border border-border bg-card p-8">
             <p className="font-serif text-xl leading-relaxed">“Helena leads people equally well from in front (directing), alongside (collaborating) and behind (supporting).”</p>
             <p className="mt-5 font-serif text-xl leading-relaxed">“She's a magician at bringing people together to deliver against our core objectives.”</p>
-            <footer className="mt-7 text-sm text-muted-foreground">— Mark, former team member and Performance & Development Coach</footer>
+            <footer className="mt-7 text-sm text-muted-foreground">— Mark, former team member</footer>
           </blockquote>
           <blockquote className="rounded-[1.5rem] border border-border bg-card p-8">
             <p className="font-serif text-xl leading-relaxed">“An accomplished coach, Helena is adept at asking the right questions…”</p>
@@ -70,12 +70,12 @@ function Consulting() {
           <blockquote className="rounded-[1.5rem] border border-border bg-card p-8">
             <p className="font-serif text-xl leading-relaxed">“She has a rare ability to lead people through periods of uncertainty with confidence, empathy and authenticity.”</p>
             <p className="mt-5 font-serif text-xl leading-relaxed">“Rather than simply managing performance, she invested in people, challenged them to grow, and gave them the confidence to achieve more than they thought possible.”</p>
-            <footer className="mt-7 text-sm text-muted-foreground">— John, former Performance &amp; Development Coach · Edited excerpts</footer>
+            <footer className="mt-7 text-sm text-muted-foreground">— John, former team member · Edited excerpts</footer>
           </blockquote>
           <blockquote className="rounded-[1.5rem] border border-border bg-card p-8">
             <p className="font-serif text-xl leading-relaxed">“H is an exceptional presenter and facilitator, able to bring complex ideas to life with clarity, warmth and purpose. As a manager, she leads with trust, creating the space and psychological safety for people to flourish rather than micromanaging them.”</p>
             <p className="mt-5 font-serif text-xl leading-relaxed">“That combination of self-awareness, generosity and high standards is rare and hugely impactful.”</p>
-            <footer className="mt-7 text-sm text-muted-foreground">— Rab Macleod, Leadership Coach &amp; Facilitator, former direct report · Edited excerpts</footer>
+            <footer className="mt-7 text-sm text-muted-foreground">— Rab, former team member · Edited excerpts</footer>
           </blockquote>
           <blockquote className="rounded-[1.5rem] border border-border bg-card p-8 md:col-span-2">
             <p className="font-serif text-xl leading-relaxed">“You have had a profound impact on so many, given people the space, your care, your time and so importantly, given them a voice.”</p>
