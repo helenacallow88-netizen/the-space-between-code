@@ -52,6 +52,24 @@ function Consulting() {
       </div></section>
 
       <section className="surface-clay py-20 md:py-24"><div className="container-prose grid gap-8 md:grid-cols-12"><div className="md:col-span-4"><p className="eyebrow">My approach</p><h2 className="mt-4 text-3xl md:text-4xl">Human, not fluffy.</h2></div><div className="space-y-5 text-lg leading-relaxed text-muted-foreground md:col-span-8"><p>I'm warm, supportive and honest. I care about how people feel, and I care about what actually changes. We'll explore the situation from different angles, challenge assumptions and agree realistic steps you can take.</p><p>My particular strength is the human side of leadership. If a project also needs specialist HR policies, systems or operational processes, I can discuss involving an appropriate specialist rather than pretending to cover everything myself.</p><p className="font-serif text-2xl text-foreground">Good leadership isn't just what you achieve. It's how you bring people with you.</p></div></div></section>
+      <section className="py-20 md:py-28"><div className="container-prose">
+        <p className="eyebrow">From people I've worked with</p>
+        <h2 className="mt-4 text-3xl md:text-4xl">Leadership is personal. So is the feedback.</h2>
+        <p className="mt-5 max-w-2xl text-muted-foreground">These reflections come from former colleagues and leaders I've worked alongside, rather than clients of The Space Between.</p>
+        <div className="mt-10 grid gap-6 md:grid-cols-2">
+          <blockquote className="rounded-[1.5rem] border border-border bg-card p-8">
+            <p className="font-serif text-xl leading-relaxed">“Helena leads people equally well from in front (directing), alongside (collaborating) and behind (supporting).”</p>
+            <p className="mt-5 font-serif text-xl leading-relaxed">“She's a magician at bringing people together to deliver against our core objectives.”</p>
+            <footer className="mt-7 text-sm text-muted-foreground">— Mark, former team member and Performance & Development Coach</footer>
+          </blockquote>
+          <blockquote className="rounded-[1.5rem] border border-border bg-card p-8">
+            <p className="font-serif text-xl leading-relaxed">“An accomplished coach, Helena is adept at asking the right questions…”</p>
+            <p className="mt-5 font-serif text-xl leading-relaxed">“Above all, Helena is brave. She’ll speak truth to power. And speak truth to peers, as well.”</p>
+            <footer className="mt-7 text-sm text-muted-foreground">— Kurtis, former CEO</footer>
+          </blockquote>
+        </div>
+      </div></section>
+
       <section className="surface-ink py-20"><div className="container-prose max-w-3xl"><h2 className="text-4xl text-cream">Let's talk about your people challenge.</h2><p className="mt-5 text-lg text-cream/80">You don't need to know which format is right yet. Tell me what's happening and what you'd like to change.</p><Link to="/contact" className="mt-8 inline-flex rounded-full bg-cream px-6 py-3 text-sm text-ink">Start a conversation</Link></div></section>
     </>
   );
