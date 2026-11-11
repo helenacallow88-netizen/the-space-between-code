@@ -75,22 +75,22 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "The Space Between — Leadership & People Development" },
+      { title: "The Space Between — Coaching • Consulting • Wellbeing" },
       {
         name: "description",
         content:
-          "Leadership and people development through coaching, facilitation, consultancy, hosting and human-centred experiences.",
+          "Coaching, people-centred consulting and restorative wellbeing experiences. For the whole person, and everything in between.",
       },
       { property: "og:title", content: "The Space Between" },
       {
         property: "og:description",
         content:
-          "Developing people. Strengthening teams. Bringing rooms to life.",
+          "For the whole person, and everything in between.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "The Space Between" },
-      { name: "twitter:description", content: "Leadership and people development that puts the human back at the centre." },
+      { name: "twitter:description", content: "Coaching • Consulting • Wellbeing for the whole person." },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9e2b2915-6e07-4968-ba3c-4d496f9df252/id-preview-f78cd0cc--9c1249b2-1d49-48b7-aa2c-8e99cf70a117.lovable.app-1783266273976.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9e2b2915-6e07-4968-ba3c-4d496f9df252/id-preview-f78cd0cc--9c1249b2-1d49-48b7-aa2c-8e99cf70a117.lovable.app-1783266273976.png" },
     ],
@@ -129,9 +129,10 @@ function SiteHeader() {
   const [open, setOpen] = useState(false);
   const links = [
     { to: "/", label: "Home" },
-    { to: "/organisations", label: "Organisations & Teams" },
     { to: "/individuals", label: "Coaching" },
-    { to: "/experiences", label: "Hosting & Experiences" },
+    { to: "/organisations", label: "Consulting" },
+    { to: "/experiences", label: "Wellbeing" },
+    { to: "/space-to-lead", label: "The Space to Lead" },
     { to: "/about", label: "About" },
     { to: "/contact", label: "Contact" },
   ] as const;
@@ -210,15 +211,16 @@ function SiteFooter() {
         <div>
           <p className="font-serif text-xl text-foreground">The Space Between</p>
           <p className="mt-3 max-w-xs text-sm text-muted-foreground">
-            Developing people. Strengthening teams. Bringing rooms to life.
+            For the whole person, and everything in between.
           </p>
         </div>
         <div>
           <p className="eyebrow">Explore</p>
           <ul className="mt-4 space-y-2 text-sm">
-            <li><Link to="/organisations" className="text-foreground hover:text-terracotta">Organisations & Teams</Link></li>
+            <li><Link to="/organisations" className="text-foreground hover:text-terracotta">Consulting</Link></li>
             <li><Link to="/individuals" className="text-foreground hover:text-terracotta">Coaching</Link></li>
-            <li><Link to="/experiences" className="text-foreground hover:text-terracotta">Hosting & Experiences</Link></li>
+            <li><Link to="/experiences" className="text-foreground hover:text-terracotta">Wellbeing</Link></li>
+            <li><Link to="/space-to-lead" className="text-foreground hover:text-terracotta">The Space to Lead</Link></li>
             <li><Link to="/about" className="text-foreground hover:text-terracotta">About</Link></li>
             <li><Link to="/contact" className="text-foreground hover:text-terracotta">Contact</Link></li>
           </ul>
@@ -234,6 +236,7 @@ function SiteFooter() {
           >
             Start a conversation
           </Link>
+          <p className="mt-4 text-xs text-muted-foreground"><a href="mailto:thespacebetween.dev@gmail.com" className="underline underline-offset-4">thespacebetween.dev@gmail.com</a></p>
         </div>
       </div>
       <div className="border-t border-border/60">
