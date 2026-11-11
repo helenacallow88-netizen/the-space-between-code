@@ -10,6 +10,7 @@ import {
 import { useEffect, useState, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
+import { SpaceBetweenMark } from "../components/space-between-mark";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 
 function NotFoundComponent() {
@@ -141,6 +142,7 @@ function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur">
       <div className="container-prose flex h-16 items-center justify-between">
         <Link to="/" className="group flex items-center gap-2" onClick={() => setOpen(false)}>
+          <SpaceBetweenMark className="h-9 w-9 shrink-0" />
           <span className="font-serif text-lg tracking-tight text-foreground">
             The Space Between
           </span>
@@ -209,7 +211,7 @@ function SiteFooter() {
     <footer className="mt-24 border-t border-border/60">
       <div className="container-prose grid gap-10 py-14 md:grid-cols-3">
         <div>
-          <p className="font-serif text-xl text-foreground">The Space Between</p>
+          <div className="flex items-center gap-3"><SpaceBetweenMark className="h-11 w-11 shrink-0" /><p className="font-serif text-xl text-foreground">The Space Between</p></div>
           <p className="mt-3 max-w-xs text-sm text-muted-foreground">
             For the whole person, and everything in between.
           </p>
