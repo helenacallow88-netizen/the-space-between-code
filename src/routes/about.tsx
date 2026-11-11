@@ -60,6 +60,8 @@ function About() {
         </div>
       </div></section>
 
+      <section className="py-14 md:py-20"><div className="container-prose max-w-3xl"><p className="eyebrow">The impact of belonging</p><blockquote className="mt-5 border-l-2 border-terracotta pl-6"><p className="font-serif text-xl leading-relaxed text-foreground md:text-2xl">“Helena’s action in bringing others from minority backgrounds together has helped me to realise that I do belong here and can make a positive impact.”</p><footer className="mt-5 text-sm text-muted-foreground">— Anonymous member of a professional inclusion network</footer></blockquote></div></section>
+
       <section className="surface-sage py-20 md:py-28"><div className="container-prose grid gap-10 md:grid-cols-12">
         <div className="md:col-span-4"><p className="eyebrow">How I work</p><h2 className="mt-4 text-3xl md:text-4xl">Warmth and honesty. Reflection and action.</h2></div>
         <div className="space-y-6 text-lg leading-relaxed text-muted-foreground md:col-span-8">
