@@ -13,7 +13,8 @@ export const Route = createFileRoute("/about")({
 const experience = [
   "15+ years in people development, leadership and programme delivery",
   "Led national coaching teams and supported leaders and early-career professionals",
-  "ICF ACC credential and Level 5 Diploma in Personal Performance Coaching",
+  "ICF accredited Level 5 Diploma in Personal Performance Coaching",
+  "Neuro-linguistic Programming (NLP)",
   "Level 2 Body-Oriented Coaching training with The Somatic School",
   "Experienced facilitator, event host and constructive leadership thought partner",
   "Founded and led a People of Colour network",
