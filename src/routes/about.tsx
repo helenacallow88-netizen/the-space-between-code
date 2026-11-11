@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import aboutImage from "@/assets/helena-about.jpg";
+import { SpaceBetweenMark } from "../components/space-between-mark";
 
 export const Route = createFileRoute("/about")({
   head: () => ({ meta: [
@@ -49,7 +50,7 @@ function About() {
       </div></section>
 
       <section className="surface-clay py-20 md:py-28"><div className="container-prose grid gap-10 md:grid-cols-12">
-        <div className="md:col-span-4"><p className="eyebrow">Behind the name</p><h2 className="mt-4 text-3xl md:text-4xl">Why The Space Between?</h2></div>
+        <div className="md:col-span-4"><SpaceBetweenMark className="mb-6 h-24 w-24" /><p className="eyebrow">Behind the name</p><h2 className="mt-4 text-3xl md:text-4xl">Why The Space Between?</h2></div>
         <div className="space-y-6 text-lg leading-relaxed text-muted-foreground md:col-span-8">
           <p className="font-serif text-2xl leading-snug text-foreground md:text-3xl">The space between isn't somewhere we get stuck. It's somewhere we get to explore.</p>
           <p>Between who we are and who we're becoming. Between different perspectives, experiences and possibilities. It's a space for curiosity, connection and discovering our own way forward.</p>
