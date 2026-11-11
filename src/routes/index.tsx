@@ -131,10 +131,24 @@ function Home() {
       </section>
 
       <section className="py-20 md:py-24">
-        <div className="container-prose max-w-3xl">
-          <p className="eyebrow">What people say</p>
-          <h2 className="mt-4 text-3xl md:text-4xl">Trust is earned through the work.</h2>
-          <p className="mt-5 text-lg leading-relaxed text-muted-foreground">I've been fortunate to work with people in many settings — from one-to-one coaching to growing businesses and national teams. Client feedback and stories will be shared here with permission.</p>
+        <div className="container-prose">
+          <p className="eyebrow">Kind words</p>
+          <h2 className="mt-4 text-3xl md:text-4xl">What people say.</h2>
+          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">A few reflections from people I've coached and worked alongside.</p>
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            <blockquote className="rounded-[1.5rem] border border-border bg-card p-7">
+              <p className="font-serif text-lg leading-relaxed">“I come away from sessions with her feeling inspired and energised.”</p>
+              <footer className="mt-6 text-sm text-muted-foreground">— Coaching client</footer>
+            </blockquote>
+            <blockquote className="rounded-[1.5rem] border border-border bg-card p-7">
+              <p className="font-serif text-lg leading-relaxed">“Helena really, and very genuinely, cares about people. She is good at building lasting relationships. She is kind. She is honest and trustworthy.”</p>
+              <footer className="mt-6 text-sm text-muted-foreground">— Kurtis, former CEO</footer>
+            </blockquote>
+            <blockquote className="rounded-[1.5rem] border border-border bg-card p-7">
+              <p className="font-serif text-lg leading-relaxed">“Helena leads people equally well from in front (directing), alongside (collaborating) and behind (supporting).”</p>
+              <footer className="mt-6 text-sm text-muted-foreground">— Mark, former team member</footer>
+            </blockquote>
+          </div>
         </div>
       </section>
 
