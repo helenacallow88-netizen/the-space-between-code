@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
 
-const BASE_URL = "";
+const BASE_URL = "https://thespacebetween.dev";
 
 interface SitemapEntry {
   path: string;
@@ -18,6 +18,7 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/organisations", changefreq: "monthly", priority: "0.9" },
           { path: "/individuals", changefreq: "monthly", priority: "0.8" },
           { path: "/experiences", changefreq: "monthly", priority: "0.8" },
+          { path: "/space-to-lead", changefreq: "monthly", priority: "0.9" },
           { path: "/about", changefreq: "monthly", priority: "0.7" },
           { path: "/contact", changefreq: "monthly", priority: "0.7" },
         ];

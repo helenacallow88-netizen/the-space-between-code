@@ -1,41 +1,30 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import expImg from "@/assets/experiences-visual.jpg";
-
+import image from "@/assets/experiences-visual.jpg";
 export const Route = createFileRoute("/experiences")({
-  head: () => ({
-    meta: [
-      { title: "Hosting, Facilitation & Experiences — The Space Between" },
-      { name: "description", content: "Conference and panel hosting, facilitation, workshops, workplace wellbeing, retreats and movement-based experiences." },
-      { property: "og:title", content: "Hosting, Facilitation & Experiences — The Space Between" },
-      { property: "og:description", content: "Bring the room to life — with warmth, energy, structure and meaningful connection." },
-    ],
-  }),
-  component: Experiences,
+  head: () => ({ meta: [
+    { title: "Wellbeing — The Space Between" },
+    { name: "description", content: "Indian Head Massage, head and hand massage, private pamper gatherings, grounded movement and bespoke workplace wellbeing experiences in Brighton & Hove." },
+    { property: "og:title", content: "Wellbeing — The Space Between" },
+  ] }),
+  component: Wellbeing,
 });
-
-const offerings = [
-  { title: "Conference & Event Hosting", body: "Confident, warm MC work that keeps the energy moving, makes speakers feel supported and helps an audience feel part of the experience rather than talked at." },
-  { title: "Panel Hosting", body: "Thoughtful moderation that draws out the interesting conversation, makes space for different voices and keeps the discussion clear, human and engaging." },
-  { title: "Workshop Facilitation", body: "Purposeful sessions for teams and communities — from trust, strengths and communication to confidence, resilience, change and belonging." },
-  { title: "Playful Embodiment Workshops", body: "Experiential development using movement, body awareness and play to explore communication, trust, creativity, confidence and emotional regulation." },
-  { title: "Workplace Wellbeing", body: "Practical nervous-system resets, embodied wellbeing sessions and Indian Head Massage options for organisations that want to offer something people can genuinely feel." },
-  { title: "Retreats & Community Experiences", body: "Spaces that blend reflection, connection, coaching, movement and honest conversation — designed around the people and purpose of the gathering." },
-  { title: "Listening Circles", body: "Held, structured conversations where groups can say what they are actually experiencing, listen differently and leave with greater understanding." },
-  { title: "Movement & Acro Experiences", body: "Playful partner movement and acro-inspired experiences that build trust, communication and connection — with performance possibilities for selected events." },
+const services = [
+  { title: "Indian Head Massage", meta: "45 minutes • £45", body: "A restorative treatment including upper back, shoulders, neck, head and face. Time to pause, soften and be cared for." },
+  { title: "Head & Hand Massage", meta: "Extended treatment • Enquire for options", body: "Combine Indian Head Massage with nurturing hand massage for a longer, more complete moment of rest." },
+  { title: "Private Pamper Gatherings", meta: "From £35 per person • Bespoke", body: "Cosy, alcohol-free gatherings for friends, mums or small groups. Individual mini treatments, a welcome smoothie, herbal teas and homemade treats, with grounding or relaxation elements tailored to the group." },
+  { title: "Workplace Wellbeing", meta: "For teams and organisations", body: "A thoughtful pause in the working day through massage, grounding, body-awareness exercises and practical techniques people can take away." },
+  { title: "Movement & Connection", meta: "Workshops & groups", body: "Playful experiences that use movement, partner acro and embodied awareness to explore trust, communication and connection. Sessions tailored to participants' experience." },
 ];
-
-function Experiences() {
-  return (
-    <>
-      <section className="surface-warm"><div className="container-prose grid gap-10 pb-24 pt-20 md:grid-cols-12 md:pb-32 md:pt-28"><div className="md:col-span-7"><p className="eyebrow">Hosting, facilitation & experiences</p><h1 className="mt-6 text-4xl leading-[1.05] text-foreground md:text-6xl">Bring the room <span className="italic text-terracotta">to life.</span></h1><p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">I host, facilitate and create experiences that combine warmth, energy and substance — so people feel comfortable enough to participate and engaged enough to remember what happened.</p><div className="mt-10"><Link to="/contact" className="inline-flex items-center rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground transition-opacity hover:opacity-90">Enquire about an event</Link></div></div><div className="md:col-span-5"><div className="aspect-[4/5] overflow-hidden rounded-[2rem]"><img src={expImg} alt="Soft watercolour horizon in warm cream, terracotta and dusty rose" width={1400} height={1000} loading="lazy" className="h-full w-full object-cover" /></div></div></div></section>
-
-      <section className="py-28 md:py-32"><div className="container-prose max-w-3xl space-y-6"><p className="font-serif text-2xl leading-snug text-foreground md:text-3xl">A good room has a feeling to it. People know when they are being managed through an agenda — and they know when somebody is genuinely holding the experience.</p><p className="text-lg leading-relaxed text-muted-foreground">I have facilitated development sessions, chaired difficult conversations and hosted large-scale events for audiences of more than 500. I love the live element: reading a room, adapting in the moment, making people feel at ease and creating enough structure for something meaningful to happen.</p></div></section>
-
-      <section className="surface-sage py-24 md:py-28"><div className="container-prose"><div className="mb-14 max-w-2xl"><p className="eyebrow">Ways to work together</p><h2 className="mt-4 text-3xl text-foreground md:text-4xl">From conference stage to workshop floor</h2></div><div className="grid gap-px overflow-hidden rounded-[1.5rem] border border-foreground/15 bg-foreground/10 md:grid-cols-2">{offerings.map((o) => <article key={o.title} className="bg-cream/85 p-8 md:p-10"><h3 className="font-serif text-2xl text-foreground">{o.title}</h3><p className="mt-3 text-muted-foreground">{o.body}</p></article>)}</div></div></section>
-
-      <section className="py-24 md:py-32"><div className="container-prose grid gap-12 md:grid-cols-12"><div className="md:col-span-4"><p className="eyebrow">The feel</p><h2 className="mt-4 text-3xl text-foreground md:text-4xl">Professional does not have to mean stiff.</h2></div><div className="md:col-span-8 space-y-6 text-lg leading-relaxed text-muted-foreground"><p>I bring energy and playfulness without losing the purpose of the room. I am comfortable improvising, speaking to large groups, handling sensitive conversations and moving between lightness and depth.</p><p>That makes this work particularly suited to organisations, conferences and communities that want people to participate rather than passively consume.</p><p className="font-serif text-2xl leading-snug text-foreground md:text-3xl">People learn and connect differently when they feel safe enough to loosen up.</p></div></div></section>
-
-      <section className="py-24 md:py-32"><div className="container-prose flex flex-col items-start justify-between gap-6 rounded-[1.5rem] border border-border p-10 md:flex-row md:items-center"><div className="max-w-xl"><h2 className="font-serif text-3xl text-foreground md:text-4xl">Planning something?</h2><p className="mt-3 text-muted-foreground">Tell me about the room, the people in it and how you want them to feel when they leave. We can build from there.</p></div><div className="flex flex-wrap gap-3"><Link to="/contact" className="inline-flex items-center rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground">Start a conversation</Link></div></div></section>
-    </>
-  );
+function Wellbeing() {
+  return <><section className="surface-warm"><div className="container-prose grid gap-12 pb-20 pt-16 md:grid-cols-12 md:items-center md:pb-28 md:pt-24"><div className="md:col-span-7"><p className="eyebrow">Wellbeing</p><h1 className="mt-6 text-4xl md:text-6xl">Space to pause, <span className="italic text-terracotta">restore and reconnect.</span></h1><p className="mt-6 font-serif text-xl leading-relaxed md:text-2xl">Rest matters in its own right.</p><p className="mt-5 text-lg leading-relaxed text-muted-foreground">From Indian Head and Hand Massage to intimate pamper gatherings, workplace wellbeing and movement experiences, I create thoughtful spaces for people to slow down, connect and feel cared for.</p><Link to="/contact" className="mt-8 inline-flex rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground">Enquire or book</Link></div><div className="md:col-span-5"><img src={image} alt="" className="aspect-[4/5] w-full rounded-[2rem] object-cover" /></div></div></section>
+    <section className="py-20 md:py-28"><div className="container-prose"><p className="eyebrow">What I offer</p><h2 className="mt-4 text-3xl md:text-4xl">A little space for yourself, or something to share.</h2><div className="mt-10 grid gap-6 md:grid-cols-2">{services.map(s => <article key={s.title} className="rounded-[1.5rem] border border-border bg-card p-8"><p className="eyebrow">{s.meta}</p><h3 className="mt-4 text-2xl">{s.title}</h3><p className="mt-4 leading-relaxed text-muted-foreground">{s.body}</p></article>)}</div></div></section>
+    <section className="surface-sage py-20 md:py-24"><div className="container-prose grid gap-10 md:grid-cols-12"><div className="md:col-span-4"><p className="eyebrow">Pamper gatherings</p><h2 className="mt-4 text-3xl md:text-4xl">Your people. Your pace. Your space to unwind.</h2></div><div className="space-y-5 text-lg leading-relaxed text-muted-foreground md:col-span-8"><p>Think cosy, personal and nurturing — not a formal spa day. Gather your friends, enjoy individual treatments, relax over a smoothie and herbal tea, and take time for meaningful connection.</p><p>Every gathering is different. We can include grounding, relaxation or guided self-massage alongside treatments, depending on your group's size and interests. Hosted in a suitable setting by arrangement.</p><p className="font-serif text-2xl text-foreground">Prices start at £35 per person. Tell me what you have in mind and we'll shape it together.</p><Link to="/contact" className="inline-flex rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground">Plan a gathering</Link></div></div></section>
+    <section className="py-20 md:py-24"><div className="container-prose"><p className="eyebrow">Kind words</p><h2 className="mt-4 text-3xl md:text-4xl">After the massage.</h2><div className="mt-9 grid gap-5 md:grid-cols-3">{[
+      "I feel wonderful, so much more relaxed",
+      "Great stress reliever and very relaxing.  Helena is friendly and welcoming",
+      "Wow, I went on a journey, one of the best massages I've ever had!"
+    ].map((quote) => <blockquote key={quote} className="rounded-[1.5rem] border border-border bg-card p-7"><p className="font-serif text-xl leading-relaxed">“{quote}”</p><footer className="mt-6 text-sm text-muted-foreground">— Indian Head Massage client</footer></blockquote>)}</div></div></section>
+    <section className="py-20"><div className="container-prose max-w-3xl"><p className="eyebrow">In person & online</p><h2 className="mt-4 text-3xl md:text-4xl">Wellbeing can take different forms.</h2><p className="mt-5 text-lg leading-relaxed text-muted-foreground">Hands-on massage is available in person. Online group and coaching experiences can include guided grounding, body awareness and self-led practices such as gentle facial self-massage. Participation is always optional, and we tailor activities to the people in the room.</p></div></section>
+    <section className="surface-ink py-20"><div className="container-prose max-w-3xl"><h2 className="text-4xl text-cream">Make space for wellbeing.</h2><p className="mt-5 text-lg text-cream/80">Looking for a treatment, a gathering or something for your team? Let's explore what would work.</p><Link to="/contact" className="mt-8 inline-flex rounded-full bg-cream px-6 py-3 text-sm text-ink">Get in touch</Link></div></section>
+  </>;
 }

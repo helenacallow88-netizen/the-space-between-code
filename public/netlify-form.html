@@ -1,11 +1,8 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Contact form</title>
-  </head>
+  <head><meta charset="UTF-8" /><title>Contact form</title></head>
   <body>
-    <!-- Netlify scans this static file at deploy time. The visible form lives at /contact. -->
+    <!-- Netlify discovers this static form at deploy time. Form notification recipients are configured in Netlify separately. -->
     <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
       <input type="hidden" name="form-name" value="contact" />
       <input name="bot-field" />
@@ -14,6 +11,7 @@
       <input name="organization" />
       <input name="enquiryType" />
       <input name="support" />
+      <input name="service" />
       <textarea name="message"></textarea>
     </form>
   </body>

@@ -1,47 +1,91 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import aboutImage from "@/assets/helena-about.jpg";
+import { SpaceBetweenMark } from "../components/space-between-mark";
 
 export const Route = createFileRoute("/about")({
-  head: () => ({
-    meta: [
-      { title: "About Helena — The Space Between" },
-      { name: "description", content: "Meet Helena Callow — people development leader, ICF-aligned coach, facilitator and host behind The Space Between." },
-      { property: "og:title", content: "About Helena — The Space Between" },
-      { property: "og:description", content: "People development leader, coach, facilitator and host — serious about the outcome, human in the way she gets there." },
-    ],
-  }),
+  head: () => ({ meta: [
+    { title: "About Helena — The Space Between" },
+    { name: "description", content: "Meet Helena, the person behind The Space Between. A warm, practical approach to coaching, people-centred consulting and wellbeing, shaped by connection, curiosity and experience." },
+    { property: "og:title", content: "About Helena — The Space Between" },
+  ] }),
   component: About,
 });
 
-const credentials = [
-  "10+ years in leadership and people development",
-  "Led national coaching teams and developed early-career professionals",
-  "Level 5 Diploma in Personal Performance Coaching & NLP — ICF aligned",
-  "Accredited Level 2 Body-Oriented Coaching — The Somatic School",
-  "Facilitated and hosted events for audiences of 500+",
-  "Leadership, culture, organisational change and team development experience",
-  "EDI champion and founder of a People of Colour network",
-  "Designated safeguarding and youth-development experience",
+const experience = [
+  "15+ years in people development, leadership and programme delivery",
+  "Led national coaching teams and supported leaders and early-career professionals",
+  "ICF accredited Level 5 Diploma in Personal Performance Coaching",
+  "Neuro-linguistic Programming (NLP)",
+  "Level 2 Body-Oriented Coaching training with The Somatic School",
+  "Experienced facilitator, event host and constructive leadership thought partner",
+  "Founded and led a People of Colour network",
 ];
 
 function About() {
   return (
     <>
-      <section className="surface-warm"><div className="container-prose grid gap-10 pb-20 pt-16 md:grid-cols-12 md:pb-28 md:pt-24"><div className="md:col-span-7"><p className="eyebrow">About Helena</p><h1 className="mt-6 text-4xl leading-[1.05] text-foreground md:text-6xl">People development is the thread <span className="italic text-terracotta">through everything I do.</span></h1><div className="mt-6 max-w-xl space-y-1.5 font-serif text-lg leading-relaxed text-muted-foreground md:text-xl"><p>Leader.</p><p>Coach.</p><p>Facilitator.</p><p>Host.</p><p>Human first.</p></div></div><div className="md:col-span-5"><div className="aspect-[3/4] overflow-hidden rounded-[2rem]"><img src={aboutImage} alt="Portrait of Helena, founder of The Space Between" width={1200} height={1400} loading="lazy" className="h-full w-full object-cover" /></div></div></div></section>
+      <section className="surface-warm"><div className="container-prose grid gap-10 pb-20 pt-16 md:grid-cols-12 md:items-center md:pb-28 md:pt-24">
+        <div className="md:col-span-7">
+          <p className="eyebrow">About me</p>
+          <h1 className="mt-6 text-4xl leading-[1.08] md:text-6xl">Hello, I'm Helena. <span className="italic text-terracotta">Human first, always.</span></h1>
+          <p className="mt-7 max-w-xl font-serif text-xl leading-relaxed md:text-2xl">I'm a coach, consultant and wellbeing practitioner who believes people are far more interesting than the boxes we put them in.</p>
+          <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted-foreground">I love meaningful conversations, bringing people together and creating the conditions for someone to see things differently. I'm warm and curious, but I'm also practical. I care about what happens after the conversation.</p>
+        </div>
+        <div className="md:col-span-5"><div className="aspect-[3/4] overflow-hidden rounded-[2rem]"><img src={aboutImage} alt="Portrait of Helena, founder of The Space Between" width={1200} height={1400} loading="lazy" className="h-full w-full object-cover" /></div></div>
+      </div></section>
 
-      <section className="py-24 md:py-32"><div className="container-prose grid gap-12 md:grid-cols-12"><div className="md:col-span-7 space-y-6 text-lg leading-relaxed text-muted-foreground"><p className="font-serif text-2xl leading-snug text-foreground md:text-3xl">For more than a decade, I have been helping people develop — as a manager, coach, facilitator, programme leader, trusted challenger and the person who can usually get a room talking.</p><p>I spent six years at Police Now leading a national team of Personal Development Coaches and sitting within the management team, with influence both upwards into senior leadership and downwards into the day-to-day experience of employees and programme participants.</p><p>One of my strengths is acting as a bridge — between leadership intention and employee experience, between organisational need and human reality. During a major redundancy process, I also served as an Employee Representative, bringing colleagues' concerns and lived experience into Executive conversations while helping people make sense of difficult decisions and uncertainty.</p><p>My work has included leadership development, coaching, early careers, culture, organisational change, EDI, safeguarding, large-scale programme delivery and events. I have coached leaders and early-career professionals, facilitated difficult conversations and hosted audiences of more than 500 people.</p><p>What ties it together is not a job title. It is an ability to build trust, understand people, create a compelling direction and then make things happen with others.</p><p>I am a doer. I like ideas, but I like them even more when they become something useful in the real world.</p></div><aside className="md:col-span-5"><div className="rounded-[1.5rem] border border-border bg-card p-8"><p className="eyebrow">Experience & training</p><ul className="mt-6 space-y-4">{credentials.map((c) => <li key={c} className="flex gap-3 text-foreground"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-terracotta" /><span>{c}</span></li>)}</ul></div></aside></div></section>
+      <section className="py-20 md:py-28"><div className="container-prose grid gap-12 md:grid-cols-12">
+        <div className="space-y-6 text-lg leading-relaxed text-muted-foreground md:col-span-7">
+          <p className="font-serif text-2xl leading-snug text-foreground md:text-3xl">I've spent much of my working life helping people find their feet, grow in confidence, navigate challenges and lead others.</p>
+          <p>Over the past 15 years, I've worked as a people leader, coach, facilitator and programme manager. I've led national teams, supported hundreds of people through development programmes, worked alongside senior leaders and helped teams navigate change.</p>
+          <p>What I've loved most hasn't been the job titles. It's been earning people's trust, asking the question that opens something up, helping someone have a difficult conversation or seeing a group find its way forward together.</p>
+          <p>I know that people and organisations need more than a listening ear. Sometimes they need a fresh perspective, an honest challenge and a plan. I bring all three, with care.</p>
+          <p>Outside traditional workplaces, you'll also find me exploring movement, teaching acro, enjoying good conversation and creating spaces where people can slow down and connect. Those experiences aren't separate from my professional life — they remind me how much we bring of ourselves into everything we do.</p>
+        </div>
+        <aside className="md:col-span-5"><div className="rounded-[1.5rem] border border-border bg-card p-8">
+          <p className="eyebrow">A little about my experience</p>
+          <h2 className="mt-4 text-2xl">Care backed by experience.</h2>
+          <ul className="mt-6 space-y-4">{experience.map(item => <li key={item} className="flex gap-3 text-foreground"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-terracotta" /><span>{item}</span></li>)}</ul>
+        </div></aside>
+      </div></section>
 
-      <section className="surface-clay py-24 md:py-28"><div className="container-prose grid gap-12 md:grid-cols-12"><div className="md:col-span-4"><p className="eyebrow">What people get from me</p><h2 className="mt-4 text-3xl text-foreground md:text-4xl">Steadiness and spark.</h2></div><div className="md:col-span-8 space-y-6 text-lg leading-relaxed text-muted-foreground"><p>I can hold a serious conversation without making it heavy. I can challenge somebody without making them defensive. I can bring energy to a room without needing to dominate it.</p><p>People tend to open up to me quickly. I think that is partly because I am genuinely curious and partly because I am willing to be human myself. I do not believe professionalism requires us to become less real.</p><p className="font-serif text-2xl leading-snug text-foreground md:text-3xl">My job is often to help people feel safe enough to be honest — and confident enough to do something with that honesty.</p></div></div></section>
+      <section className="surface-clay py-20 md:py-28"><div className="container-prose grid gap-10 md:grid-cols-12">
+        <div className="md:col-span-4"><SpaceBetweenMark className="mb-6 h-24 w-24" /><p className="eyebrow">Behind the name</p><h2 className="mt-4 text-3xl md:text-4xl">Why The Space Between?</h2></div>
+        <div className="space-y-6 text-lg leading-relaxed text-muted-foreground md:col-span-8">
+          <p className="font-serif text-2xl leading-snug text-foreground md:text-3xl">The space between isn't somewhere we get stuck. It's somewhere we get to explore.</p>
+          <p>Between who we are and who we're becoming. Between different perspectives, experiences and possibilities. It's a space for curiosity, connection and discovering our own way forward.</p>
+          <p>As a mixed-race woman, I've often felt myself between two worlds — not entirely in one place or the other. Over time, I've come to see that in-between space differently. Rather than needing to fit neatly into a category, there's freedom to move, to wonder and to be myself.</p>
+          <p>That idea lives in the name and in the logo: two forms with space between them, and a dot that sits within it. For me, the dot represents a person — including me — free to explore what might be found there. It can also represent anyone who comes to this space, finding their own possibilities.</p>
+          <p className="font-serif text-2xl text-foreground">You don't have to fit into a box to belong.</p>
+        </div>
+      </div></section>
 
-      <section className="surface-sage py-24"><div className="container-prose grid gap-12 md:grid-cols-12"><div className="md:col-span-4"><p className="eyebrow">The wider lens</p><h2 className="mt-4 text-3xl text-foreground md:text-4xl">Work is human. So is life.</h2></div><div className="md:col-span-8 space-y-6 text-lg leading-relaxed text-muted-foreground"><p>My approach has also been shaped by coaching, somatic practice, movement, travel and my own experiences of identity and belonging as a mixed-race woman. Those parts of my life have made me more interested in the whole person — not just the version of them that arrives at work.</p><p>That is why The Space Between can hold leadership coaching and a workplace workshop alongside personal coaching, embodiment, community experiences and movement. They are different formats, but the underlying question is similar: what helps people feel more connected to themselves, each other and what they are trying to create?</p></div></div></section>
+      <section className="py-14 md:py-20"><div className="container-prose max-w-3xl"><p className="eyebrow">The impact of belonging</p><blockquote className="mt-5 border-l-2 border-terracotta pl-6"><p className="font-serif text-xl leading-relaxed text-foreground md:text-2xl">“Helena’s action in bringing others from minority backgrounds together has helped me to realise that I do belong here and can make a positive impact.”</p><footer className="mt-5 text-sm text-muted-foreground">— Anonymous member of a professional inclusion network</footer></blockquote></div></section>
 
-      <section className="py-24 md:py-28"><div className="container-prose"><div className="mb-12 max-w-2xl"><p className="eyebrow">Ways to work together</p><h2 className="mt-4 text-3xl text-foreground md:text-4xl">Different contexts. Same human approach.</h2></div><div className="grid gap-6 md:grid-cols-3"><WorkLink to="/organisations" eyebrow="Organisations & teams" title="Leadership, people development and facilitation." body="For organisations that want practical support with leaders, teams, culture, change and wellbeing." /><WorkLink to="/individuals" eyebrow="Coaching" title="One-to-one space for thinking and growth." body="For leaders, founders and individuals navigating decisions, confidence, identity, relationships or change." /><WorkLink to="/experiences" eyebrow="Hosting & experiences" title="Rooms with energy, purpose and connection." body="For conferences, panels, workshops, retreats, communities and embodied experiences." /></div></div></section>
+      <section className="surface-sage py-20 md:py-28"><div className="container-prose grid gap-10 md:grid-cols-12">
+        <div className="md:col-span-4"><p className="eyebrow">How I work</p><h2 className="mt-4 text-3xl md:text-4xl">Warmth and honesty. Reflection and action.</h2></div>
+        <div className="space-y-6 text-lg leading-relaxed text-muted-foreground md:col-span-8">
+          <p>I want people to feel comfortable enough to show up as themselves. That might mean laughter, a challenging question, a moment of stillness or a conversation that finally gets to the heart of something.</p>
+          <p>I draw on coaching, leadership experience, somatic awareness and practical facilitation. We work with what's happening now, not by digging into past trauma, and we keep sight of what you want to change, understand or experience.</p>
+          <p>Sometimes the result is a clearer decision or a better conversation. Sometimes it's a more confident leader, a team working better together or simply the chance to rest. Each matters in its own way.</p>
+          <p className="font-serif text-2xl text-foreground">For the whole person, and everything in between.</p>
+        </div>
+      </div></section>
 
-      <section className="py-20 md:py-24"><div className="container-prose flex flex-col items-start justify-between gap-6 rounded-[1.5rem] border border-border p-10 md:flex-row md:items-center"><div className="max-w-xl"><h2 className="font-serif text-3xl text-foreground md:text-4xl">Got something in mind?</h2><p className="mt-3 text-muted-foreground">You do not need to squeeze it into a neat service category. Tell me what you are trying to create.</p></div><Link to="/contact" className="inline-flex items-center rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground">Start a conversation</Link></div></section>
+      <section className="py-20 md:py-28"><div className="container-prose">
+        <p className="eyebrow">Ways to work together</p><h2 className="mt-4 text-3xl md:text-4xl">What would you like to make space for?</h2>
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          <WorkLink to="/individuals" eyebrow="Coaching" title="Clarity and growth." body="Space to reflect, understand yourself and take meaningful steps forward." />
+          <WorkLink to="/organisations" eyebrow="Consulting" title="The people side of business." body="A trusted thinking partner for leaders navigating real people challenges." />
+          <WorkLink to="/experiences" eyebrow="Wellbeing" title="Rest and connection." body="Massage, pamper gatherings, movement and workplace experiences." />
+        </div>
+      </div></section>
+
+      <section className="pb-20 md:pb-24"><div className="container-prose flex flex-col items-start justify-between gap-6 rounded-[1.5rem] border border-border p-10 md:flex-row md:items-center"><div className="max-w-xl"><h2 className="font-serif text-3xl md:text-4xl">Shall we have a conversation?</h2><p className="mt-3 text-muted-foreground">Tell me what you're looking for. We can explore what feels right together.</p></div><Link to="/contact" className="inline-flex rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground">Get in touch</Link></div></section>
     </>
   );
 }
 
 function WorkLink({ to, eyebrow, title, body }: { to: "/organisations" | "/individuals" | "/experiences"; eyebrow: string; title: string; body: string }) {
-  return <Link to={to} className="group rounded-[1.5rem] border border-border bg-card p-8 transition-shadow hover:shadow-[0_20px_50px_-20px_rgba(60,30,15,0.25)]"><p className="eyebrow">{eyebrow}</p><h3 className="mt-4 font-serif text-2xl text-foreground">{title}</h3><p className="mt-4 text-muted-foreground">{body}</p><span className="mt-8 inline-flex items-center gap-2 text-sm text-foreground">Explore <span aria-hidden>→</span></span></Link>;
+  return <Link to={to} className="group rounded-[1.5rem] border border-border bg-card p-8 transition-shadow hover:shadow-[0_20px_50px_-20px_rgba(60,30,15,0.25)]"><p className="eyebrow">{eyebrow}</p><h3 className="mt-4 font-serif text-2xl text-foreground">{title}</h3><p className="mt-4 text-muted-foreground">{body}</p><span className="mt-8 inline-flex text-sm text-foreground">Explore →</span></Link>;
 }
