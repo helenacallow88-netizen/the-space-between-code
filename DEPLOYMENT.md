@@ -45,3 +45,7 @@ Netlify controls form notification email; changing the email recipient does not 
 First confirm that Lovable is still connected to the correct GitHub repository and that Netlify watches the same branch. If the current Lovable plan does not support GitHub sync, export the code from Lovable, commit and push it to the watched GitHub branch manually. Netlify will still deploy each GitHub update.
 
 Do not force-push or rewrite published Git history. Lovable relies on that history to keep the project in sync.
+
+## Contact address after the November 2026 refresh
+
+The visible contact email and mailto links use **thespacebetween.dev@gmail.com**. The form remains a Netlify Forms submission named `contact`; to send notifications to the new inbox, update the form's notification recipient in **Netlify → Forms → contact → Form notifications** (exact UI naming may vary). This setting is not stored in the GitHub repository, so a code update by itself does not change where notification emails arrive. Test both the direct mailto link and a live form submission after deployment.
