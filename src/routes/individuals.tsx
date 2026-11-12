@@ -17,7 +17,7 @@ function Coaching() {
       <section className="surface-warm"><div className="container-prose grid gap-10 pb-20 pt-16 md:grid-cols-12 md:items-center md:pb-28 md:pt-24"><div className="md:col-span-7">
         <p className="eyebrow">Coaching</p><h1 className="mt-6 text-4xl md:text-6xl">Beyond the <span className="italic text-terracotta">conversation.</span></h1>
         <p className="mt-6 font-serif text-xl leading-relaxed md:text-2xl">Space to understand yourself, explore what's possible and move forward in a way that feels genuinely yours.</p>
-        <p className="mt-5 text-lg leading-relaxed text-muted-foreground">I offer one-to-one and group coaching for individuals, founders and leaders. My approach is thoughtful and practical, combining conversation, self-awareness and, where helpful, body-oriented coaching so you can work with your whole self — not just from the neck up.</p>
+        <p className="mt-5 text-lg leading-relaxed text-muted-foreground">I offer one-to-one and group coaching for individuals, founders and leaders, in person or online. My approach is thoughtful and practical, combining conversation, self-awareness and, where helpful, body-oriented coaching so you can work with your whole self — not just from the neck up.</p><p className="mt-4 font-medium">Coaching available in person or online, by arrangement.</p>
         <Link to="/contact" className="mt-8 inline-flex rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground">Enquire about coaching</Link>
       </div><div className="md:col-span-5"><img src={image} alt="Woman in peaceful reflection in nature" className="aspect-[4/5] w-full rounded-[2rem] object-cover" /></div></div></section>
 

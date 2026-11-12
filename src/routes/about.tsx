@@ -28,7 +28,7 @@ function About() {
         <div className="md:col-span-7">
           <p className="eyebrow">About me</p>
           <h1 className="mt-6 text-4xl leading-[1.08] md:text-6xl">Hello, I'm Helena. <span className="italic text-terracotta">Human first, always.</span></h1>
-          <p className="mt-7 max-w-xl font-serif text-xl leading-relaxed md:text-2xl">I'm a coach, consultant and wellbeing practitioner who believes people are far more interesting than the boxes we put them in.</p>
+          <p className="mt-7 max-w-xl font-serif text-xl leading-relaxed md:text-2xl">For the whole person, and everything in between.</p><p className="mt-4 max-w-xl text-lg leading-relaxed text-muted-foreground">I'm a coach, consultant and wellbeing practitioner who believes people are far more interesting than the boxes we put them in.</p>
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted-foreground">I love meaningful conversations, bringing people together and creating the conditions for someone to see things differently. I'm warm and curious, but I'm also practical. I care about what happens after the conversation.</p>
         </div>
         <div className="md:col-span-5"><div className="aspect-[3/4] overflow-hidden rounded-[2rem]"><img src={aboutImage} alt="Portrait of Helena, founder of The Space Between" width={1200} height={1400} loading="lazy" className="h-full w-full object-cover" /></div></div>
