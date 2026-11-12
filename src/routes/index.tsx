@@ -9,9 +9,9 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "The Space Between | Coaching • Consulting • Wellbeing" },
-      { name: "description", content: "For the whole person, and everything in between. Thoughtful coaching, people-centred leadership consulting and restorative wellbeing experiences with Helena Callow." },
+      { name: "description", content: "Space to pause. Perspective to move forward. Coaching, consulting and wellbeing for individuals, leaders and organisations." },
       { property: "og:title", content: "The Space Between — Coaching • Consulting • Wellbeing" },
-      { property: "og:description", content: "For the whole person, and everything in between." },
+      { property: "og:description", content: "Space to pause. Perspective to move forward." },
     ],
   }),
   component: Home,
@@ -51,9 +51,9 @@ function Home() {
         <div className="container-prose grid gap-12 pb-20 pt-16 md:grid-cols-12 md:items-center md:pb-28 md:pt-24">
           <div className="md:col-span-7">
             <p className="eyebrow">Coaching • Consulting • Wellbeing</p>
-            <h1 className="mt-7 text-balance text-4xl leading-[1.08] md:text-6xl lg:text-7xl">For the whole person, <span className="italic text-terracotta">and everything in between.</span></h1>
-            <p className="mt-8 max-w-xl font-serif text-xl leading-relaxed md:text-2xl">Space to think clearly, connect more deeply and move forward with confidence.</p>
-            <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted-foreground">I'm Helena. Through coaching, people-centred consulting and restorative wellbeing experiences, I work with individuals, groups and workplaces to create meaningful change, connection and moments of rest.</p>
+            <h1 className="mt-7 text-balance text-4xl leading-[1.08] md:text-6xl lg:text-7xl">Space to pause. <span className="italic text-terracotta">Perspective to move forward.</span></h1>
+            <p className="mt-8 max-w-xl font-serif text-xl leading-relaxed md:text-2xl">Through coaching, consulting and wellbeing, I help individuals, leaders and organisations step out of the everyday noise, better understand themselves and others, and reconnect with what matters.</p>
+            <p className="mt-5 max-w-xl text-lg italic leading-relaxed text-muted-foreground">Because sometimes, seeing things differently changes everything.</p>
             <div className="mt-9 flex flex-wrap gap-3">
               <a href="#services" className="rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground hover:opacity-90">Explore my services</a>
               <Link to="/contact" className="rounded-full border border-foreground/25 px-6 py-3 text-sm text-foreground hover:bg-foreground/5">Let's talk</Link>
@@ -108,11 +108,11 @@ function Home() {
 
       <section className="py-20 md:py-28">
         <div className="container-prose grid gap-12 md:grid-cols-12">
-          <div className="md:col-span-4"><p className="eyebrow">My approach</p><h2 className="mt-4 text-3xl md:text-4xl">Warmth in the experience. Depth in the work. Clarity in the outcomes.</h2></div>
+          <div className="md:col-span-4"><p className="eyebrow">My approach</p><h2 className="mt-4 text-3xl md:text-4xl">Pause. Reflect. Reconnect.</h2></div>
           <div className="space-y-6 text-lg leading-relaxed text-muted-foreground md:col-span-8">
             <p>Working with the whole person doesn't mean losing sight of the outcome. It means recognising that our thoughts, emotions, physical responses and relationships all shape how we show up and what we do next.</p>
             <p>We work with what's happening for you now — with curiosity, respect and constructive challenge. There may be grounding, reflection or movement, alongside clear thinking, honest conversations and practical action. This is coaching and development, not therapy.</p>
-            <p className="font-serif text-2xl text-foreground">Thoughtful support. Meaningful outcomes.</p>
+            <p className="font-serif text-2xl text-foreground">A little space can open up a different perspective.</p>
           </div>
         </div>
       </section>
