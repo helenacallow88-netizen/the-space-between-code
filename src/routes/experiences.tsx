@@ -23,6 +23,7 @@ function Wellbeing() {
       <h2 className="mt-4 text-3xl md:text-5xl">A Little Space <span className="italic text-terracotta">Together.</span></h2>
       <p className="mt-5 max-w-3xl font-serif text-xl leading-relaxed">Good company, a little indulgence and time to unwind — without having to organise a thing.</p>
       <p className="mt-5 max-w-3xl text-lg leading-relaxed text-muted-foreground">An intimate, alcohol-free gathering at my welcoming home sanctuary in West Hove. Each guest enjoys their choice of a 30-minute Indian Head Massage or Hand Massage, plus a welcome smoothie, herbal teas and homemade treats. A lovely way to celebrate, reconnect or simply make time for one another.</p>
+      <figure className="mt-10 overflow-hidden rounded-[1.75rem] border border-border bg-card shadow-sm"><img src="/a_little_space_together_stripe.jpg" alt="A Little Space Together pamper gathering: a warm, candlelit setting with herbal tea, a welcome smoothie, towels and homemade treats" className="w-full object-cover" loading="lazy" /></figure>
       <div className="mt-10 grid gap-6 md:grid-cols-2">
         {[{count:4,total:180,deposit:60},{count:6,total:270,deposit:90}].map(pkg=><article key={pkg.count} className="flex flex-col rounded-[1.75rem] border border-border bg-card p-8">
           <p className="eyebrow">Private gathering • {pkg.count} guests</p>
@@ -34,7 +35,7 @@ function Wellbeing() {
             <li>✓ Welcome smoothie, herbal teas &amp; homemade treats</li>
             <li>✓ Cosy, private space to relax and connect</li>
           </ul>
-          <p className="mt-6 text-sm text-muted-foreground">Suggested booking deposit: £{pkg.deposit}, with the remaining £{pkg.total-pkg.deposit} payable before the event. Date and payment arrangements confirmed personally.</p>
+          <p className="mt-6 text-sm text-muted-foreground">Booking deposit: £{pkg.deposit}, with the remaining £{pkg.total-pkg.deposit} due 72 hours before the gathering. Date agreed before payment.</p>
           <Link to="/contact" className="mt-6 inline-flex w-fit rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground">Enquire about {pkg.count} guests</Link>
         </article>)}
       </div>
