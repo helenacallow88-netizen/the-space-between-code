@@ -84,6 +84,8 @@ function Home() {
         </div>
       </section>
 
+      <section className="surface-clay py-16 md:py-20"><div className="container-prose grid items-center gap-8 md:grid-cols-12"><div className="md:col-span-8"><p className="eyebrow">Massage gift vouchers</p><h2 className="mt-4 text-3xl md:text-4xl">Give someone a moment to pause.</h2><p className="mt-4 text-lg text-muted-foreground">A thoughtful gift of relaxation: Indian Head Massage or Head &amp; Hand Massage, with e-vouchers delivered by email.</p></div><div className="md:col-span-4 md:text-right"><Link to="/gift-vouchers" className="inline-flex rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground">Explore gift vouchers</Link></div></div></section>
+
       <section className="surface-clay py-20 md:py-28">
         <div className="container-prose grid items-center gap-12 md:grid-cols-12">
           <div className="md:col-span-7">
