@@ -133,6 +133,7 @@ function SiteHeader() {
     { to: "/individuals", label: "Coaching" },
     { to: "/organisations", label: "Consulting" },
     { to: "/experiences", label: "Wellbeing" },
+    { to: "/gift-vouchers", label: "Gift Vouchers" },
     { to: "/space-to-lead", label: "The Space to Lead" },
     { to: "/about", label: "About" },
     { to: "/contact", label: "Contact" },
@@ -222,6 +223,7 @@ function SiteFooter() {
             <li><Link to="/organisations" className="text-foreground hover:text-terracotta">Consulting</Link></li>
             <li><Link to="/individuals" className="text-foreground hover:text-terracotta">Coaching</Link></li>
             <li><Link to="/experiences" className="text-foreground hover:text-terracotta">Wellbeing</Link></li>
+            <li><Link to="/gift-vouchers" className="text-foreground hover:text-terracotta">Gift Vouchers</Link></li>
             <li><Link to="/space-to-lead" className="text-foreground hover:text-terracotta">The Space to Lead</Link></li>
             <li><Link to="/about" className="text-foreground hover:text-terracotta">About</Link></li>
             <li><Link to="/contact" className="text-foreground hover:text-terracotta">Contact</Link></li>
