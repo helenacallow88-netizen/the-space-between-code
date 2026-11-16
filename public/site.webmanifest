@@ -1,0 +1,18 @@
+{
+  "name": "The Space Between",
+  "short_name": "Space Between",
+  "description": "Coaching, consulting and wellbeing",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#F8F3EB",
+  "theme_color": "#F8F3EB",
+  "icons": [
+    {
+      "src": "/space-between-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
