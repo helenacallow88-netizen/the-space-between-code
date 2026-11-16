@@ -10,7 +10,7 @@ export const Route = createFileRoute("/individuals")({
   component: Coaching,
 });
 
-const themes = ["Confidence & self-awareness", "Career & life transitions", "Leadership", "Decision-making", "Relationships & communication", "Purpose & direction", "Boundaries", "Change"];
+const themes = ["Confidence & self-awareness", "Career & life transitions", "Leadership", "Decision-making", "Relationships & communication", "Purpose & direction", "Identity & belonging", "Boundaries", "Change"];
 function Coaching() {
   return (
     <>
