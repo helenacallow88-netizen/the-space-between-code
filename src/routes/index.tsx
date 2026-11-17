@@ -3,7 +3,7 @@ import heroImg from "@/assets/hero-threshold.jpg";
 import coachingImg from "@/assets/individuals-visual.jpg";
 import consultingImg from "@/assets/organizations-visual.jpg";
 import wellbeingImg from "@/assets/experiences-visual.jpg";
-import helenaImg from "@/assets/helena-about.jpg";
+import helenaImg from "@/assets/About me leopard print.jpeg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
