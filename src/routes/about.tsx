@@ -40,7 +40,7 @@ function About() {
           <p>Over the past 15 years, I've worked as a people leader, coach, facilitator and programme manager. I've led national teams, supported hundreds of people through development programmes, worked alongside senior leaders and helped teams navigate change.</p>
           <p>What I've loved most hasn't been the job titles. It's been earning people's trust, asking the question that opens something up, helping someone have a difficult conversation or seeing a group find its way forward together.</p>
           <p>I know that people and organisations need more than a listening ear. Sometimes they need a fresh perspective, an honest challenge and a plan. I bring all three, with care.</p>
-          <p>Outside traditional workplaces, you'll also find me exploring movement, teaching acro, enjoying good conversation and creating spaces where people can slow down and connect. Those experiences aren't separate from my professional life — they remind me how much we bring of ourselves into everything we do.</p>
+          <p>In my own in-between moments, you'll often find me exploring somewhere new, getting out into nature, dancing, practising acro or connecting with different people and communities. Travel has always been a big part of my life — opening me up to new perspectives, cultures and ways of being. I'm endlessly curious about people, what connects us and what makes us different. Those experiences aren't separate from my professional life — they remind me how much we bring of ourselves into everything we do.</p>
         </div>
         <aside className="md:col-span-5"><div className="rounded-[1.5rem] border border-border bg-card p-8">
           <p className="eyebrow">A little about my experience</p>
