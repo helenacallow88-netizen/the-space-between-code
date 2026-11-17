@@ -1,5 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import aboutImage from "@/assets/helena-about.jpg";
+import aboutImage from "@/assets/About me leopard print.jpeg";
+import natureImage from "@/assets/In nature selfie.jpeg";
+import tropicalImage from "@/assets/Surrounded by leaves.jpeg";
 import { SpaceBetweenMark } from "../components/space-between-mark";
 
 export const Route = createFileRoute("/about")({
@@ -46,7 +48,7 @@ function About() {
           <p className="eyebrow">A little about my experience</p>
           <h2 className="mt-4 text-2xl">Care backed by experience.</h2>
           <ul className="mt-6 space-y-4">{experience.map(item => <li key={item} className="flex gap-3 text-foreground"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-terracotta" /><span>{item}</span></li>)}</ul>
-        </div></aside>
+        <figure className="mt-6 overflow-hidden rounded-[1.5rem]"><img src={natureImage} alt="Helena outdoors in the countryside, enjoying time in nature" className="aspect-[4/3] w-full object-cover" loading="lazy" /></figure></aside>
       </div></section>
 
       <section className="surface-clay py-20 md:py-28"><div className="container-prose grid gap-10 md:grid-cols-12">
@@ -59,6 +61,8 @@ function About() {
           <p className="font-serif text-2xl text-foreground">You don't have to fit into a box to belong.</p>
         </div>
       </div></section>
+
+      <section className="py-12 md:py-16"><div className="container-prose"><figure className="mx-auto max-w-2xl overflow-hidden rounded-[1.75rem]"><img src={tropicalImage} alt="Helena exploring lush tropical greenery" className="max-h-[650px] w-full object-cover" loading="lazy" /></figure></div></section>
 
       <section className="py-14 md:py-20"><div className="container-prose max-w-3xl"><p className="eyebrow">The impact of belonging</p><blockquote className="mt-5 border-l-2 border-terracotta pl-6"><p className="font-serif text-xl leading-relaxed text-foreground md:text-2xl">“Helena’s action in bringing others from minority backgrounds together has helped me to realise that I do belong here and can make a positive impact.”</p><footer className="mt-5 text-sm text-muted-foreground">— Anonymous member of a professional inclusion network</footer></blockquote></div></section>
 
