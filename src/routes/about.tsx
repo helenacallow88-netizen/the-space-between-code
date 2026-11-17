@@ -48,6 +48,7 @@ function About() {
           <p className="eyebrow">A little about my experience</p>
           <h2 className="mt-4 text-2xl">Care backed by experience.</h2>
           <ul className="mt-6 space-y-4">{experience.map(item => <li key={item} className="flex gap-3 text-foreground"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-terracotta" /><span>{item}</span></li>)}</ul>
+        </div>
         <figure className="mt-6 overflow-hidden rounded-[1.5rem]"><img src={natureImage} alt="Helena outdoors in the countryside, enjoying time in nature" className="aspect-[4/3] w-full object-cover" loading="lazy" /></figure></aside>
       </div></section>
 
