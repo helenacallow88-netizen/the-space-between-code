@@ -112,8 +112,8 @@ function Home() {
         <div className="container-prose grid gap-12 md:grid-cols-12">
           <div className="md:col-span-4"><p className="eyebrow">My approach</p><h2 className="mt-4 text-3xl md:text-4xl">Pause. Reflect. Reconnect.</h2></div>
           <div className="space-y-6 text-lg leading-relaxed text-muted-foreground md:col-span-8">
-            <p>Working with the whole person doesn't mean losing sight of the outcome. It means recognising that our thoughts, emotions, physical responses and relationships all shape how we show up and what we do next.</p>
-            <p>We work with what's happening for you now — with curiosity, respect and constructive challenge. There may be grounding, reflection or movement, alongside clear thinking, honest conversations and practical action. This is coaching and development, not therapy.</p>
+            <p>You can arrive exactly as you are — with energy or stillness, clarity or uncertainty, questions or no particular agenda. Our thoughts, emotions, bodies and relationships all have something to tell us, if we make room to listen.</p>
+            <p>Together, we explore what's present with curiosity, care and, when helpful, an honest challenge. There may be reflection, movement, laughter or quiet. Sometimes the experience is valuable in itself; sometimes it brings clarity or inspires change. There's no prescribed pace. Coaching is a space for exploration and development, not therapy.</p>
             <p className="font-serif text-2xl text-foreground">A little space can open up a different perspective.</p>
           </div>
         </div>
@@ -124,9 +124,9 @@ function Home() {
           <div className="md:col-span-4"><img src={helenaImg} alt="Helena, founder of The Space Between" className="aspect-[4/5] w-full rounded-[1.75rem] object-cover" loading="lazy" /></div>
           <div className="md:col-span-8">
             <p className="eyebrow">Meet Helena</p>
-            <h2 className="mt-4 text-3xl md:text-5xl">Human first. Practical always.</h2>
+            <h2 className="mt-4 text-3xl md:text-5xl">Come as you are. Discover what's possible.</h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">I'm a coach, consultant and wellbeing practitioner with over 15 years' experience developing people and supporting leaders. I've led national teams, worked with senior executives, facilitated difficult conversations and supported individuals to find their own way forward.</p>
-            <p className="mt-4 text-lg leading-relaxed text-muted-foreground">I bring warmth, curiosity and care — but I won't shy away from the question that needs asking. I'm interested in what changes after our work together, not just how good a session feels in the moment.</p>
+            <p className="mt-4 text-lg leading-relaxed text-muted-foreground">I bring warmth, curiosity and care, alongside a willingness to explore questions that aren't always easy to ask. I value the experience itself — feeling heard, finding stillness, discovering something unexpected or simply having room to be. Sometimes that opens up a new perspective or a way forward; sometimes its meaning unfolds over time.</p>
             <Link to="/about" className="mt-7 inline-flex text-sm font-medium underline underline-offset-4">More about me →</Link>
           </div>
         </div>
