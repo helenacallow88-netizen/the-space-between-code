@@ -31,7 +31,7 @@ function About() {
           <p className="eyebrow">About me</p>
           <h1 className="mt-6 text-4xl leading-[1.08] md:text-6xl">Hello, I'm Helena. <span className="italic text-terracotta">Human first, always.</span></h1>
           <p className="mt-7 max-w-xl font-serif text-xl leading-relaxed md:text-2xl">For the whole person, and everything in between.</p><p className="mt-4 max-w-xl text-lg leading-relaxed text-muted-foreground">I'm a coach, consultant and wellbeing practitioner who believes people are far more interesting than the boxes we put them in.</p>
-          <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted-foreground">I love meaningful conversations, bringing people together and creating the conditions for someone to see things differently. I'm warm and curious, but I'm also practical. I care about what happens after the conversation.</p>
+          <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted-foreground">I love meaningful conversations, bringing people together and creating the conditions for someone to see things differently. I bring warmth, curiosity and care, alongside a willingness to explore questions that aren't always easy to ask. I value what happens in the moment just as much as what might unfold afterwards.</p>
         </div>
         <div className="md:col-span-5"><div className="aspect-[3/4] overflow-hidden rounded-[2rem]"><img src={aboutImage} alt="Portrait of Helena, founder of The Space Between" width={1200} height={1400} loading="lazy" className="h-full w-full object-cover" /></div></div>
       </div></section>
@@ -41,7 +41,7 @@ function About() {
           <p className="font-serif text-2xl leading-snug text-foreground md:text-3xl">I've spent much of my working life helping people find their feet, grow in confidence, navigate challenges and lead others.</p>
           <p>Over the past 15 years, I've worked as a people leader, coach, facilitator and programme manager. I've led national teams, supported hundreds of people through development programmes, worked alongside senior leaders and helped teams navigate change.</p>
           <p>What I've loved most hasn't been the job titles. It's been earning people's trust, asking the question that opens something up, helping someone have a difficult conversation or seeing a group find its way forward together.</p>
-          <p>I know that people and organisations need more than a listening ear. Sometimes they need a fresh perspective, an honest challenge and a plan. I bring all three, with care.</p>
+          <p>Sometimes a fresh perspective, an honest challenge or a plan can help. Other times, what matters most is being heard, finding space to pause or noticing something you hadn't seen before. I make room for both, with care.</p>
           <p>In my own in-between moments, you'll often find me exploring somewhere new, getting out into nature, dancing, practising acro or connecting with different people and communities. Travel has always been a big part of my life — opening me up to new perspectives, cultures and ways of being. I'm endlessly curious about people, what connects us and what makes us different. Those experiences aren't separate from my professional life — they remind me how much we bring of ourselves into everything we do.</p>
         </div>
         <aside className="md:col-span-5"><div className="rounded-[1.5rem] border border-border bg-card p-8">
@@ -55,10 +55,12 @@ function About() {
       <section className="surface-clay py-20 md:py-28"><div className="container-prose grid gap-10 md:grid-cols-12">
         <div className="md:col-span-4"><SpaceBetweenMark className="mb-6 h-24 w-24" /><p className="eyebrow">Behind the name</p><h2 className="mt-4 text-3xl md:text-4xl">Why The Space Between?</h2></div>
         <div className="space-y-6 text-lg leading-relaxed text-muted-foreground md:col-span-8">
-          <p className="font-serif text-2xl leading-snug text-foreground md:text-3xl">The space between isn't somewhere we get stuck. It's somewhere we get to explore.</p>
-          <p>Between who we are and who we're becoming. Between different perspectives, experiences and possibilities. It's a space for curiosity, connection and discovering our own way forward.</p>
+          <p className="font-serif text-2xl leading-snug text-foreground md:text-3xl">The space between isn't empty. It's where possibility lives.</p>
+          <p>Between a question and an answer. Between a challenge and a way forward. Between ourselves and another person. Between who we are and who we're becoming. We can be so focused on getting somewhere or solving something that we overlook what this space itself has to offer.</p>
           <p>As a mixed-race woman, I've often felt myself between two worlds — not entirely in one place or the other. Over time, I've come to see that in-between space differently. Rather than needing to fit neatly into a category, there's freedom to move, to wonder and to be myself.</p>
           <p>That idea lives in the name and in the logo: two forms with space between them, and a dot that sits within it. For me, the dot represents a person — including me — free to explore what might be found there. It can also represent anyone who comes to this space, finding their own possibilities.</p>
+          <p>When we give that space attention, curiosity and compassion, something can shift. We might find it in silence, movement, play, touch, conversation or simply listening more deeply to ourselves and one another. Through coaching, consulting and wellbeing, I create space to explore what lies beneath the surface, connect with our own wisdom and discover new possibilities.</p>
+          <p>Sometimes that means slowing down. Sometimes it means moving, laughing, asking a difficult question or looking at something differently. We don't have to force an answer: understanding and change can emerge at its own pace.</p>
           <p className="font-serif text-2xl text-foreground">You don't have to fit into a box to belong.</p>
         </div>
       </div></section>
@@ -68,11 +70,11 @@ function About() {
       <section className="py-14 md:py-20"><div className="container-prose max-w-3xl"><p className="eyebrow">The impact of belonging</p><blockquote className="mt-5 border-l-2 border-terracotta pl-6"><p className="font-serif text-xl leading-relaxed text-foreground md:text-2xl">“Helena’s action in bringing others from minority backgrounds together has helped me to realise that I do belong here and can make a positive impact.”</p><footer className="mt-5 text-sm text-muted-foreground">— Anonymous member of a professional inclusion network</footer></blockquote></div></section>
 
       <section className="surface-sage py-20 md:py-28"><div className="container-prose grid gap-10 md:grid-cols-12">
-        <div className="md:col-span-4"><p className="eyebrow">How I work</p><h2 className="mt-4 text-3xl md:text-4xl">Warmth and honesty. Reflection and action.</h2></div>
+        <div className="md:col-span-4"><p className="eyebrow">How I work</p><h2 className="mt-4 text-3xl md:text-4xl">Come as you are. Discover what's possible.</h2></div>
         <div className="space-y-6 text-lg leading-relaxed text-muted-foreground md:col-span-8">
-          <p>I want people to feel comfortable enough to show up as themselves. That might mean laughter, a challenging question, a moment of stillness or a conversation that finally gets to the heart of something.</p>
-          <p>I draw on coaching, leadership experience, somatic awareness and practical facilitation. We work with what's happening now, not by digging into past trauma, and we keep sight of what you want to change, understand or experience.</p>
-          <p>Sometimes the result is a clearer decision or a better conversation. Sometimes it's a more confident leader, a team working better together or simply the chance to rest. Each matters in its own way.</p>
+          <p>You don't need to arrive with all the answers, a clear goal or a particular way of being. There's room for your energy and stillness, your certainty and uncertainty, your curiosity and vulnerability — and everything in between.</p>
+          <p>I draw on coaching, leadership experience, somatic awareness and facilitation, responding to the person and the moment. Sometimes that means laughter, movement or an honest question; sometimes it means slowing down, listening or simply allowing space to be. My coaching is present-focused rather than therapy or trauma treatment.</p>
+          <p>Sometimes the result is a clearer decision, a better conversation or a new possibility. Sometimes it's feeling heard, cared for, grounded or more connected to yourself. The experience matters, and its meaning may unfold long after we meet.</p>
           <p className="font-serif text-2xl text-foreground">For the whole person, and everything in between.</p>
         </div>
       </div></section>
