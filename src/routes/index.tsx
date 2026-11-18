@@ -22,7 +22,7 @@ const offers = [
     title: "Coaching",
     image: coachingImg,
     eyebrow: "Individuals • Leaders • Groups",
-    description: "A space to explore what matters, develop self-awareness and move forward with clarity. Reflective, practical coaching that works with your thoughts, emotions and body — not just what is happening in your head.",
+    description: "A space to come as you are, without judgement or expectation. To pause, explore, be curious and connect more deeply with yourself. Through conversation, reflection and listening to the whole of you, we make room for new perspectives, possibilities and whatever might emerge along the way.",
     to: "/individuals" as const,
     action: "Explore coaching",
   },
