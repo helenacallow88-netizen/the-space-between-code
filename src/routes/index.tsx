@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImg from "@/assets/hero-threshold.jpg";
 import coachingImg from "@/assets/individuals-visual.jpg";
@@ -44,9 +45,50 @@ const offers = [
   },
 ];
 
+// Black Friday 2026: UK local time is GMT during this window.
+const campaignStart = Date.parse("2026-11-27T00:00:00Z");
+const campaignEnd = Date.parse("2026-11-30T00:00:00Z");
+
+function BlackFridayBanner() {
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    let timer: ReturnType<typeof setTimeout> | undefined;
+    const refresh = () => {
+      if (timer !== undefined) clearTimeout(timer);
+      const now = Date.now();
+      setVisible(now >= campaignStart && now < campaignEnd);
+      const next = now < campaignStart ? campaignStart : now < campaignEnd ? campaignEnd : null;
+      if (next !== null) timer = setTimeout(refresh, Math.min(next - now, 2147483647));
+    };
+    refresh();
+    window.addEventListener("focus", refresh);
+    return () => {
+      if (timer !== undefined) clearTimeout(timer);
+      window.removeEventListener("focus", refresh);
+    };
+  }, []);
+  if (!visible) return null;
+  return (
+    <section aria-label="Black Friday gift voucher offers" className="surface-clay border-b border-border">
+      <div className="container-prose grid items-center gap-5 py-8 md:grid-cols-12 md:py-10">
+        <div className="md:col-span-8">
+          <p className="eyebrow">A little Black Friday treat • 27–29 November</p>
+          <h2 className="mt-3 text-3xl md:text-4xl">Give a little space <span className="italic text-terracotta">this Christmas.</span></h2>
+          <p className="mt-3 text-lg text-muted-foreground">A little gift of rest, care and connection. Save £5 per person on massage and A Little Space Together pamper gathering gift vouchers this weekend.</p>
+          <p className="mt-2 text-sm text-muted-foreground">Massage from £40 • Private gatherings from £160 • Vouchers valid for 12 months.</p>
+        </div>
+        <div className="md:col-span-4 md:text-right">
+          <a href="https://checkout.yourgift.cards/caf93502-1862-448a-b32a-81006ea05752?productId=c3345933-3d42-431a-7d36-08df4aeda3a8,cf1f00d3-64e6-4099-7d37-08df4aeda3a8,e076eafb-59a1-4c22-7d3b-08df4aeda3a8,f8b581a1-cb67-4b0e-55e4-08df4af4958b,9f9d8c68-1e4d-4c92-7d3e-08df4aeda3a8&amp;language=en-GB" className="inline-flex rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground hover:opacity-90">Explore Black Friday gift vouchers</a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Home() {
   return (
     <>
+      <BlackFridayBanner />
       <section className="surface-warm">
         <div className="container-prose grid gap-12 pb-20 pt-16 md:grid-cols-12 md:items-center md:pb-28 md:pt-24">
           <div className="md:col-span-7">
