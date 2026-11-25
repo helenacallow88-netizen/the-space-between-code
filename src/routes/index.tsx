@@ -78,7 +78,7 @@ function BlackFridayBanner() {
           <p className="mt-2 text-sm text-muted-foreground">Massage from £40 • Private gatherings from £160 • Vouchers valid for 12 months.</p>
         </div>
         <div className="md:col-span-4 md:text-right">
-          <a href="https://checkout.yourgift.cards/caf93502-1862-448a-b32a-81006ea05752?productId=c3345933-3d42-431a-7d36-08df4aeda3a8,cf1f00d3-64e6-4099-7d37-08df4aeda3a8,e076eafb-59a1-4c22-7d3b-08df4aeda3a8,f8b581a1-cb67-4b0e-55e4-08df4af4958b,9f9d8c68-1e4d-4c92-7d3e-08df4aeda3a8&amp;language=en-GB" className="inline-flex rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground hover:opacity-90">Explore Black Friday gift vouchers</a>
+          <Link to="/gift-vouchers" className="inline-flex rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground hover:opacity-90">Explore Black Friday gift vouchers</Link>
         </div>
       </div>
     </section>
@@ -126,7 +126,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="surface-clay py-16 md:py-20"><div className="container-prose grid items-center gap-8 md:grid-cols-12"><div className="md:col-span-8"><p className="eyebrow">Massage gift vouchers</p><h2 className="mt-4 text-3xl md:text-4xl">Give someone a moment to pause.</h2><p className="mt-4 text-lg text-muted-foreground">A thoughtful gift of relaxation: Indian Head Massage or Head &amp; Hand Massage, with e-vouchers delivered by email.</p></div><div className="md:col-span-4 md:text-right"><Link to="/gift-vouchers" className="inline-flex rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground">Explore gift vouchers</Link></div></div></section>
+      <section className="surface-clay py-16 md:py-20"><div className="container-prose grid items-center gap-8 md:grid-cols-12"><div className="md:col-span-8"><p className="eyebrow">Wellbeing gift vouchers</p><h2 className="mt-4 text-3xl md:text-4xl">Give someone a moment to pause.</h2><p className="mt-4 text-lg text-muted-foreground">A thoughtful gift of relaxation: Indian Head Massage, Head &amp; Hand Massage or a private pamper gathering, with e-vouchers delivered by email.</p></div><div className="md:col-span-4 md:text-right"><Link to="/gift-vouchers" className="inline-flex rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground">Explore gift vouchers</Link></div></div></section>
 
       <section className="surface-clay py-20 md:py-28">
         <div className="container-prose grid items-center gap-12 md:grid-cols-12">
