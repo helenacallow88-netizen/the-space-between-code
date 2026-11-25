@@ -15,6 +15,7 @@ export const Route = createFileRoute("/gift-vouchers")({
 
 function GiftVouchers() {
   const [promo, setPromo] = useState(false);
+  const [standardGatheringsLive, setStandardGatheringsLive] = useState(false);
   useEffect(() => {
     const start = Date.parse("2026-11-27T00:00:00Z");
     const end = Date.parse("2026-11-30T00:00:00Z");
@@ -23,6 +24,7 @@ function GiftVouchers() {
       if (timer !== undefined) clearTimeout(timer);
       const now = Date.now();
       setPromo(now >= start && now < end);
+      setStandardGatheringsLive(now >= end);
       const next = now < start ? start : now < end ? end : null;
       if (next !== null) timer = setTimeout(refresh, Math.min(next - now, 2147483647));
     };
@@ -33,6 +35,7 @@ function GiftVouchers() {
   const allOffers = checkoutUrl + "?productId=c3345933-3d42-431a-7d36-08df4aeda3a8,cf1f00d3-64e6-4099-7d37-08df4aeda3a8,e076eafb-59a1-4c22-7d3b-08df4aeda3a8,f8b581a1-cb67-4b0e-55e4-08df4af4958b,9f9d8c68-1e4d-4c92-7d3e-08df4aeda3a8&language=en-GB";
   const massageOffers = checkoutUrl + "?productId=c3345933-3d42-431a-7d36-08df4aeda3a8,cf1f00d3-64e6-4099-7d37-08df4aeda3a8&language=en-GB";
   const gatheringOffers = checkoutUrl + "?productId=e076eafb-59a1-4c22-7d3b-08df4aeda3a8,f8b581a1-cb67-4b0e-55e4-08df4af4958b,9f9d8c68-1e4d-4c92-7d3e-08df4aeda3a8&language=en-GB";
+  const standardGatherings = checkoutUrl + "?productId=33fd4ab3-3a72-4b3d-7d5a-08df4aeda3a8,2f611a67-2d2a-4851-7d5c-08df4aeda3a8,8e3ec038-e5f4-44ad-7d5f-08df4aeda3a8&language=en-GB";
   return (
     <>
       <section className="surface-warm py-20 md:py-28">
@@ -67,19 +70,19 @@ function GiftVouchers() {
               <p className="eyebrow">45 minutes • {promo ? <><s>£45</s> £40</> : "£45"}</p>
               <h3 className="mt-4 text-2xl">Indian Head Massage</h3>
               <p className="mt-4 flex-1 leading-relaxed text-muted-foreground">A nurturing seated treatment for the upper back, shoulders, neck, head and face. Aromatic oils are used on the skin, with oil-free techniques for the hair and head.</p>
-              <a href={checkoutUrl} target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex w-fit rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground">Choose this gift</a>
+              <a href={promo ? massageOffers : checkoutUrl} target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex w-fit rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground">Choose this gift</a>
             </article>
             <article className="flex flex-col rounded-[1.75rem] border border-border bg-card p-8">
               <img src="/hand_massage_website%20(1).png" alt="Seated hand massage with supported forearms" className="mb-6 aspect-[4/3] w-full rounded-xl object-cover" loading="lazy" />
               <p className="eyebrow">75 minutes • {promo ? <><s>£60</s> £55</> : "£60"}</p>
               <h3 className="mt-4 text-2xl">Indian Head &amp; Hand Massage</h3>
               <p className="mt-4 flex-1 leading-relaxed text-muted-foreground">A little extra time to relax, combining the seated Indian Head Massage with a soothing hand treatment — from head to fingertips.</p>
-              <a href={checkoutUrl} target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex w-fit rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground">Choose this gift</a>
+              <a href={promo ? massageOffers : checkoutUrl} target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex w-fit rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground">Choose this gift</a>
             </article>
           </div>
         </div>
       </section>
-      <section className="surface-clay py-16 md:py-24">
+      <section id="gathering-gifts" className="scroll-mt-24 surface-clay py-16 md:py-24">
         <div className="container-prose">
           <p className="eyebrow">Private pamper gathering • West Hove</p>
           <h2 className="mt-4 text-3xl md:text-5xl">A Little Space <span className="italic text-terracotta">Together.</span></h2>
@@ -92,7 +95,7 @@ function GiftVouchers() {
             </article>)}
           </div>
           <p className="mt-5 text-muted-foreground">Your voucher covers the whole group. Get in touch after purchase to arrange a mutually convenient date. My resident cat Rey lives at the sanctuary; please consider any guest allergies.</p>
-          <a href={promo ? gatheringOffers : checkoutUrl} target="_blank" rel="noopener noreferrer" className="mt-7 inline-flex rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground">Choose a gathering gift voucher</a>
+          {(promo || standardGatheringsLive) ? <a href={promo ? gatheringOffers : standardGatherings} target="_blank" rel="noopener noreferrer" className="mt-7 inline-flex rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground">Choose a gathering gift voucher</a> : <p className="mt-7 text-sm font-medium">Gathering gift vouchers available from Friday 27 November.</p>}
           <Link to="/experiences" className="ml-4 mt-5 inline-flex text-sm underline underline-offset-4">Explore wellbeing experiences</Link>
         </div>
       </section>
