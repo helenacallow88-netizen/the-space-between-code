@@ -40,7 +40,11 @@ function Wellbeing() {
         <p className="mt-3 leading-relaxed text-muted-foreground">Get in touch to agree your date and group size. A £45 booking payment then secures your gathering and pays for the organiser’s own massage. Other guests can pay their £45 individually through secure payment links, without the organiser needing to collect everyone’s money. The remaining balance is due 72 hours before the gathering.</p>
         <h4 className="mt-7 font-serif text-2xl">Cancellations</h4>
         <p className="mt-3 leading-relaxed text-muted-foreground">The organiser’s £45 booking payment is refundable if the gathering is cancelled at least seven days before the agreed date. For bookings made less than seven days ahead, a 24-hour cancellation window applies, provided the cancellation is made at least 72 hours before the gathering. Cancellation arrangements for other guests’ payments will be confirmed before payment.</p>
-        <Link to="/contact" className="mt-8 inline-flex w-fit rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground">Enquire about your gathering</Link>
+        <p className="mt-8 text-muted-foreground">Organising a gathering with friends, or treating someone special? You can arrange a date and pay individually, or give the whole gathering as a prepaid gift voucher.</p>
+        <div className="mt-5 flex flex-wrap gap-3">
+          <Link to="/contact" className="inline-flex w-fit rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground">Enquire about your gathering</Link>
+          <Link to="/gift-vouchers" hash="gathering-gifts" className="inline-flex w-fit rounded-full border border-foreground/25 px-6 py-3 text-sm text-foreground hover:bg-foreground/5">Give as a gift</Link>
+        </div>
       </div>
       <div className="mt-8 rounded-[1.5rem] border border-border bg-card/70 p-7">
         <h3 className="font-serif text-2xl">Before your gathering</h3>
